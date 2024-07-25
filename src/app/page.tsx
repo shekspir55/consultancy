@@ -2,19 +2,49 @@ import HardBadge from "./common/hard-badge";
 import SoftBadge from "./common/soft-badge";
 
 export default function Home() {
+  const steps = [
+    {
+      title: "Getting in touch",
+      done: true,
+    },
+    {
+      title: "Agreeing on scope",
+      done: true,
+    },
+    {
+      title: "Interviewing team members",
+    },
+    {
+      title: "Identifying",
+    },
+    {
+      title: "Presenting a plan of improvement",
+    },
+    {
+      title: "Prioritizing",
+    },
+    {
+      title: "Implementing",
+    },
+    {
+      title: "Reiterating",
+    },
+  ];
+
   return (
     <div>
       <div className="hero bg-base-100 min-h-screen">
         <div className="hero-content text-center">
           <div className="max-w-lg">
             <h2 className="text-2xl m-5">
-              Software engineering / project / qa / operations management services for
-              small and medium software engineering teams.
+              Software engineering / project / QA / operations management
+              services for small and medium software engineering teams.
             </h2>
             <h1 className="text-4xl font-bold brightness-150">
               Suggestions are not enough: <br />
-              <p className="text-6xl"> We drive and <u>own the results.</u> </p>
-              
+              <p className="text-6xl">
+                We drive and <u>own the results.</u>{" "}
+              </p>
             </h1>
             <a className="btn btn-primary m-10" href="https://cal.com/ruben-k">
               <svg
@@ -40,7 +70,7 @@ export default function Home() {
       <div className="divider"></div>
       <div className=" bg-base-100 min-h-screen">
         <div className="flex justify-center">
-          <div className="max-w-lg">
+          <div className="max-w-lg p-7">
             <h2 className="text-4xl font-bold">Things we can help with.</h2>
             <br />
             <ul className="list-disc font-bold">
