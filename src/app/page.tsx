@@ -1,3 +1,6 @@
+import HardBadge from "./common/hard-badge";
+import SoftBadge from "./common/soft-badge";
+
 export default function Home() {
   return (
     <div>
@@ -5,12 +8,12 @@ export default function Home() {
         <div className="hero-content text-center">
           <div className="max-w-lg">
             <h2 className="text-2xl m-5">
-              Engineering / project / qa / operations management services for small
-              and medium software engineering teams.
+              Engineering / project / qa / operations management services for
+              small and medium software engineering teams.
             </h2>
             <h1 className="text-5xl font-bold">
               Suggestions are not enough: <br />
-              <u> We drive and own the solutions. </u>
+              <u> We drive and own the results. </u>
             </h1>
             <a className="btn btn-primary m-10" href="https://cal.com/ruben-k">
               <svg
@@ -41,6 +44,7 @@ export default function Home() {
             <ul className="list-disc font-bold">
               <li>
                 Technical Supervision and Code Review
+                <HardBadge />
                 <ul className="list-decimal ml-10 font-normal">
                   <li>Conducting thorough PR reviews</li>
                   <li>Providing ongoing technical supervision for projects</li>
@@ -48,6 +52,8 @@ export default function Home() {
               </li>
               <li>
                 Project Management Implementation
+                <SoftBadge />
+                <HardBadge />
                 <ul className="list-decimal ml-10 font-normal">
                   <li>Setting up and optimizing project management tools</li>
                   <li>Implementing Agile methodologies (e.g., Kanban)</li>
@@ -56,6 +62,7 @@ export default function Home() {
               </li>
               <li>
                 Communication Enhancement
+                <SoftBadge />
                 <ul className="list-decimal ml-10 font-normal">
                   <li>
                     Implementing and structuring team communication platforms
@@ -65,6 +72,7 @@ export default function Home() {
               </li>
               <li>
                 Documentation and Knowledge Sharing
+                <HardBadge />
                 <ul className="list-decimal ml-10 font-normal">
                   <li>Implementing collaborative documentation tools</li>
                   <li>Creating centralized knowledge bases</li>
@@ -73,6 +81,7 @@ export default function Home() {
               </li>
               <li>
                 Product management and Quality Assurance Improvement
+                <HardBadge />
                 <ul className="list-decimal ml-10 font-normal">
                   <li>Setting up test management systems</li>
                   <li>Creating Product Requirements Documents (PRDs)</li>
@@ -81,6 +90,7 @@ export default function Home() {
               </li>
               <li>
                 CI/CD Implementation
+                <HardBadge />
                 <ul className="list-decimal ml-10 font-normal">
                   <li>
                     Setting up continuous integration and deployment pipelines
@@ -91,6 +101,7 @@ export default function Home() {
               </li>
               <li>
                 Code Quality Enhancement
+                <HardBadge />
                 <ul className="list-decimal ml-10 font-normal">
                   <li>Implementing code quality analysis tools</li>
                   <li>Setting up pre-commit hooks and linters</li>
@@ -99,6 +110,7 @@ export default function Home() {
               </li>
               <li>
                 Testing Practices Optimization
+                <HardBadge />
                 <ul className="list-decimal ml-10 font-normal">
                   <li>Implementing unit and end-to-end testing frameworks</li>
                   <li>Introducing Test-Driven Development (TDD)</li>
@@ -107,6 +119,7 @@ export default function Home() {
               </li>
               <li>
                 Bug Tracking and Monitoring
+                <HardBadge />
                 <ul className="list-decimal ml-10 font-normal">
                   <li>
                     Implementing bug tracking and user behavior monitoring tools
@@ -118,6 +131,7 @@ export default function Home() {
               </li>
               <li>
                 Employee Engagement and Culture Building
+                <SoftBadge />
                 <ul className="list-decimal ml-10 font-normal">
                   <li>Implementing recognition systems</li>
                   <li>Designing performance review processes</li>
@@ -126,6 +140,7 @@ export default function Home() {
               </li>
               <li>
                 Leadership and Management Training
+                <SoftBadge />
                 <ul className="list-decimal ml-10 font-normal">
                   <li>Providing leadership trainings</li>
                   <li>Implementing 360-degree feedback systems</li>
@@ -133,6 +148,7 @@ export default function Home() {
               </li>
               <li>
                 Organizational Structure Optimization
+                <SoftBadge />
                 <ul className="list-decimal ml-10 font-normal">
                   <li>Defining clear roles and responsibilities</li>
                   <li>Flattening communication structures</li>
