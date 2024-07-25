@@ -11,9 +11,9 @@ export default function Home() {
               Engineering / project / qa / operations management services for
               small and medium software engineering teams.
             </h2>
-            <h1 className="text-5xl font-bold">
+            <h1 className="text-4xl font-bold">
               Suggestions are not enough: <br />
-              <u> We drive and own the results. </u>
+              <u className="text-6xl"> We drive and own the results. </u>
             </h1>
             <a className="btn btn-primary m-10" href="https://cal.com/ruben-k">
               <svg
@@ -51,7 +51,7 @@ export default function Home() {
                 </ul>
               </li>
               <li>
-                Project Management Implementation
+                Project Management Improvement
                 <SoftBadge />
                 <HardBadge />
                 <ul className="list-decimal ml-10 font-normal">
