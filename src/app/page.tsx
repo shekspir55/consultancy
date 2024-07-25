@@ -11,9 +11,10 @@ export default function Home() {
               Engineering / project / qa / operations management services for
               small and medium software engineering teams.
             </h2>
-            <h1 className="text-4xl font-bold">
+            <h1 className="text-4xl font-bold brightness-150">
               Suggestions are not enough: <br />
-              <u className="text-6xl"> We drive and own the results. </u>
+              <p className="text-6xl"> We drive and <u>own the results.</u> </p>
+              
             </h1>
             <a className="btn btn-primary m-10" href="https://cal.com/ruben-k">
               <svg
@@ -36,6 +37,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="divider"></div>
       <div className=" bg-base-100 min-h-screen">
         <div className="flex justify-center">
           <div className="max-w-lg">
