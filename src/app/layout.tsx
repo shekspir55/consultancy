@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "powered by love: practical software engineering consulting agency",
-  description: "We don’t only recommend but we own the results.",
+  description: "Software engineering / project / qa / operations management services for small and medium software engineering teams.",
 };
 
 export default function RootLayout({

@@ -8,7 +8,7 @@ export default function Home() {
         <div className="hero-content text-center">
           <div className="max-w-lg">
             <h2 className="text-2xl m-5">
-              Engineering / project / qa / operations management services for
+              Software engineering / project / qa / operations management services for
               small and medium software engineering teams.
             </h2>
             <h1 className="text-4xl font-bold brightness-150">
