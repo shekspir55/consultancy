@@ -2,19 +2,17 @@ export default function Home() {
   return (
     <div>
       <div className="hero bg-base-200 min-h-screen">
-        <div className="hero-content flex-col lg:flex-row-reverse">
-          <img
-            src="https://img.daisyui.com/images/stock/photo-1635805737707-575885ab0820.webp"
-            className="max-w-sm rounded-lg shadow-2xl"
-          />
-          <div>
-            <h1 className="text-5xl font-bold">Box Office News!</h1>
-            <p className="py-6">
-              Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-              excepturi exercitationem quasi. In deleniti eaque aut repudiandae
-              et a id nisi.
-            </p>
-            <button className="btn btn-primary">
+        <div className="hero-content text-center">
+          <div className="max-w-lg">
+            <h2 className="text-2xl">
+              Engineering, management, qa solutions for small and medium
+              software engineering teams.
+            </h2>
+            <h1 className="text-5xl font-bold">
+              We don’t only recommend but we <u>own the results.</u>
+            </h1>
+            <p className="py-6">PRACTICAL CONSULTING AGENCY</p>
+            <a className="btn btn-primary" href="https://cal.com/ruben-k">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -30,8 +28,119 @@ export default function Home() {
                   stroke-linejoin="round"
                 />
               </svg>
-              Book a free call
-            </button>
+              Book Your Free Consultation
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className=" bg-base-200 min-h-screen">
+        <div className="flex justify-center">
+          <div className="max-w-lg">
+            <h2 className="text-4xl font-bold">Things we can help with.</h2>
+            <br />
+            <ul className="list-disc font-bold">
+              <li>
+                Technical Supervision and Code Review
+                <ul className="list-decimal ml-10 font-normal">
+                  <li>Conducting thorough PR reviews</li>
+                  <li>Providing ongoing technical supervision for projects</li>
+                  <li>Offering code architecture guidance</li>
+                </ul>
+              </li>
+              <li>
+                Project Management Implementation
+                <ul className="list-decimal ml-10 font-normal">
+                  <li>Setting up and optimizing project management tools</li>
+                  <li>Implementing Agile methodologies (e.g., Kanban)</li>
+                  <li>Establishing sprint planning and review processes</li>
+                </ul>
+              </li>
+              <li>
+                Communication Enhancement
+                <ul className="list-decimal ml-10 font-normal">
+                  <li>
+                    Implementing and structuring team communication platforms
+                  </li>
+                  <li>Setting up role-based permissions and integrations</li>
+                </ul>
+              </li>
+              <li>
+                Documentation and Knowledge Sharing
+                <ul className="list-decimal ml-10 font-normal">
+                  <li>Implementing collaborative documentation tools</li>
+                  <li>Creating centralized knowledge bases</li>
+                  <li>Establishing documentation processes</li>
+                </ul>
+              </li>
+              <li>
+                Quality Assurance Improvement
+                <ul className="list-decimal ml-10 font-normal">
+                  <li>Setting up test management systems</li>
+                  <li>Creating Product Requirements Documents (PRDs)</li>
+                  <li>Developing testing scenarios</li>
+                </ul>
+              </li>
+              <li>
+                CI/CD Implementation
+                <ul className="list-decimal ml-10 font-normal">
+                  <li>
+                    Setting up continuous integration and deployment pipelines
+                  </li>
+                  <li>Implementing automated builds, tests, and deployments</li>
+                  <li>Establishing feature flag systems</li>
+                </ul>
+              </li>
+              <li>
+                Code Quality Enhancement
+                <ul className="list-decimal ml-10 font-normal">
+                  <li>Implementing code quality analysis tools</li>
+                  <li>Setting up pre-commit hooks and linters</li>
+                  <li>Establishing code review guidelines</li>
+                </ul>
+              </li>
+              <li>
+                Testing Practices Optimization
+                <ul className="list-decimal ml-10 font-normal">
+                  <li>Implementing unit and end-to-end testing frameworks</li>
+                  <li>Introducing Test-Driven Development (TDD)</li>
+                  <li>Setting code coverage requirements</li>
+                </ul>
+              </li>
+              <li>
+                Bug Tracking and Monitoring
+                <ul className="list-decimal ml-10 font-normal">
+                  <li>
+                    Implementing bug tracking and user behavior monitoring tools
+                  </li>
+                  <li>
+                    Establishing bug reporting and prioritization processes
+                  </li>
+                </ul>
+              </li>
+              <li>
+                Employee Engagement and Culture Building
+                <ul className="list-decimal ml-10 font-normal">
+                  <li>Implementing recognition systems</li>
+                  <li>Designing performance review processes</li>
+                  <li>Organizing team-building activities</li>
+                </ul>
+              </li>
+              <li>
+                Leadership and Management Training
+                <ul className="list-decimal ml-10 font-normal">
+                  <li>Providing executive coaching</li>
+                  <li>Implementing 360-degree feedback systems</li>
+                </ul>
+              </li>
+              <li>
+                Organizational Structure Optimization
+                <ul className="list-decimal ml-10 font-normal">
+                  <li>Defining clear roles and responsibilities</li>
+                  <li>Flattening communication structures</li>
+                  <li>Creating cross-functional teams</li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

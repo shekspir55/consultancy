@@ -18,7 +18,7 @@ const config: Config = {
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ["night"],
+    themes: ["valentine"],
   },
 };
 export default config;
