@@ -11,7 +11,7 @@ export default function Home() {
             <h1 className="text-5xl font-bold">
               We don’t only recommend but we <u>own the results.</u>
             </h1>
-            <p className="py-6">PRACTICAL CONSULTING AGENCY</p>
+            <p className="py-6 active">PRACTICAL CONSULTING AGENCY</p>
             <a className="btn btn-primary" href="https://cal.com/ruben-k">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,6 @@ export default function Home() {
                 <ul className="list-decimal ml-10 font-normal">
                   <li>Conducting thorough PR reviews</li>
                   <li>Providing ongoing technical supervision for projects</li>
-                  <li>Offering code architecture guidance</li>
                 </ul>
               </li>
               <li>
@@ -73,7 +72,7 @@ export default function Home() {
                 </ul>
               </li>
               <li>
-                Quality Assurance Improvement
+                Product management and Quality Assurance Improvement
                 <ul className="list-decimal ml-10 font-normal">
                   <li>Setting up test management systems</li>
                   <li>Creating Product Requirements Documents (PRDs)</li>
@@ -128,7 +127,7 @@ export default function Home() {
               <li>
                 Leadership and Management Training
                 <ul className="list-decimal ml-10 font-normal">
-                  <li>Providing executive coaching</li>
+                  <li>Providing leadership trainings</li>
                   <li>Implementing 360-degree feedback systems</li>
                 </ul>
               </li>
