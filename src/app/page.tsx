@@ -1,5 +1,6 @@
 import HardBadge from "./common/hard-badge";
 import SoftBadge from "./common/soft-badge";
+import WhatWeDo from "./common/what-we-do";
 
 export default function Home() {
   const steps = [
@@ -35,18 +36,16 @@ export default function Home() {
     <div>
       <div className="hero bg-base-100 min-h-screen">
         <div className="hero-content text-center">
-          <div className="max-w-lg">
-            <h2 className="text-2xl m-5">
-              Software engineering / project / QA / operations management
-              services for small and medium software engineering teams.
+          <div className="container">
+            <h2 className="text-4xl mb-5">
+              <WhatWeDo />
+              management and consultancy services for small and medium software
+              engineering teams.
             </h2>
-            <h1 className="text-4xl font-bold brightness-150">
-              Suggestions are not enough: <br />
-              <p className="text-6xl">
-                We drive and <u>own the results.</u>{" "}
-              </p>
-            </h1>
-            <a className="btn btn-primary m-10" href="https://cal.com/ruben-k">
+            <a
+              className="btn btn-neutral m-10 md:btn-lg"
+              href="https://cal.com/ruben-k"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-6 w-6"
@@ -69,17 +68,25 @@ export default function Home() {
       </div>
       <div className="divider"></div>
       <div className=" bg-base-100">
-        <div className="flex justify-center">
-          <div className="max-w-lg p-7">
-            <h2 className="text-4xl font-bold">Why choose us?</h2>
+        <div className="max-w-lg mx-auto">
+          <div className="container p-3">
+            <h2 className="text-5xl md:text-6xl font-bold mb-10">
+              Why choose us?
+            </h2>
+
+            <p className="">
+              Suggestions are not enough: We drive and own the results.
+            </p>
             <div className="mt-5 mb-5">
               <h1 className="text-3xl">
                 Dedicated to solving your problem - doing whatever it takes.
               </h1>
-              <h1 className="text-4xl font-bold  text-center m-5">
+
+              <h1 className="text-3xl md:text-4xl font-bold  text-center m-5">
                 <span className="text-5xl brightness-150">love,</span>
                 guaranteed❤️
               </h1>
+
               <p>
                 Love Guarantee: Fall in love with our service or it's on us. If
                 you're not completely satisfied with our tailored solutions
@@ -91,14 +98,14 @@ export default function Home() {
             <div className="mt-5 mb-5">
               <h3 className="text-3xl">Personalized for your needs:</h3>
               <p>
-                Your engineering team and challenges are unique, and so are our solutions.
-                At powered-by.love, we craft tailored strategies that fit your
-                specific needs. We're here to empower your success with
+                Your engineering team and challenges are unique, and so are our
+                solutions. At powered-by.love, we craft tailored strategies that
+                fit your specific needs. We're here to empower your success with
                 custom-built, love-powered solutions.
               </p>
             </div>
             <div className="block">
-              <div className="[stats] shadow">
+              <div className="stats max-md:stats-vertical shadow">
                 <div className="stat">
                   <div className="stat-figure text-primary">
                     <svg
