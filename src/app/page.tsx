@@ -68,6 +68,89 @@ export default function Home() {
         </div>
       </div>
       <div className="divider"></div>
+      <div className=" bg-base-100">
+        <div className="flex justify-center">
+          <div className="max-w-lg p-7">
+            <h2 className="text-4xl font-bold">Why choose us?</h2>
+            <div className="mt-5 mb-5">
+              <h1 className="text-3xl">
+                Dedicated to solving your problem - doing whatever it takes.
+              </h1>
+              <h1 className="text-4xl font-bold  text-center m-5">
+                <span className="text-5xl brightness-150">love,</span>
+                guaranteed❤️
+              </h1>
+              <p>
+                Love Guarantee: Fall in love with our service or it's on us. If
+                you're not completely satisfied with our tailored solutions
+                within the first month, we'll refund your investment, no
+                questions asked. We're that confident in our ability to power
+                your success with love.
+              </p>
+            </div>
+            <div className="mt-5 mb-5">
+              <h3 className="text-3xl">Personalized for your needs:</h3>
+              <p>
+                Your engineering team and challenges are unique, and so are our solutions.
+                At powered-by.love, we craft tailored strategies that fit your
+                specific needs. We're here to empower your success with
+                custom-built, love-powered solutions.
+              </p>
+            </div>
+            <div className="block">
+              <div className="[stats] shadow">
+                <div className="stat">
+                  <div className="stat-figure text-primary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      className="inline-block h-8 w-8 stroke-current"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div className="stat-title">Get</div>
+                  <div className="stat-value text-primary">12+</div>
+                  <div className="stat-desc">
+                    year experts help you <br />
+                    with your projects
+                  </div>
+                </div>
+                <div className="stat">
+                  <div className="stat-figure text-secondary">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      className="inline-block h-8 w-8 stroke-current"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M13 10V3L4 14h7v7l9-11h-7z"
+                      ></path>
+                    </svg>
+                  </div>
+                  <div className="stat-title">More than</div>
+                  <div className="stat-value text-secondary">80+h</div>
+                  <div className="stat-desc">
+                    Spent on your projects <br />
+                    and team each month
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div className="divider"></div>
       <div className=" bg-base-100 min-h-screen">
         <div className="flex justify-center">
           <div className="max-w-lg p-7">
@@ -195,7 +278,6 @@ export default function Home() {
       <div className=" bg-base-100 p-10">
         <div className="flex justify-center">
           <div className="max-w-lg">
-            <h2 className="text-4xl font-bold">Personalized for your needs:</h2>
             <br />
             <div className="flex justify-center">
               <div className="card bg-base-100 image-full w-100 shadow-xl">
