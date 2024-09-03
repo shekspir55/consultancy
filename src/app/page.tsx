@@ -298,7 +298,7 @@ export default function Home() {
                   <div className="card-actions justify-end">
                     <a
                       className="btn btn-primary"
-                      href="https://www.linkedin.com/in/ruben-kh/"
+                      href="https://cal.com/ruben-pbl/"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
