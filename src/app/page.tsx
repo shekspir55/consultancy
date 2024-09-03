@@ -39,8 +39,7 @@ export default function Home() {
           <div className="container">
             <h2 className="text-4xl mb-5">
               <WhatWeDo />
-              management and consultancy services for small and medium software
-              engineering teams.
+              Software engineering management and consultancy
             </h2>
             <a
               className="btn btn-neutral m-10 md:btn-lg"
@@ -55,7 +54,7 @@ export default function Home() {
               >
                 <path
                   d="M3 9H21M7 3V5M17 3V5M6 12H10V16H6V12ZM6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
-                  stroke="#000000"
+                  stroke="#ffffff"
                   stroke-width="2"
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -63,6 +62,10 @@ export default function Home() {
               </svg>
               Book Your Free Consultation
             </a>
+            <h3>Site is under construction.</h3>
+          </div>
+          <div className="avatar">
+            <img src="/ruben.png" className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2" />
           </div>
         </div>
       </div>
@@ -79,7 +82,8 @@ export default function Home() {
             </p>
             <div className="mt-5 mb-5">
               <h1 className="text-3xl">
-                Dedicated to solving your problem - doing whatever it takes.
+                Dedicated to solving your <b>hard problems</b> - doing whatever
+                it takes.
               </h1>
 
               <h1 className="text-3xl md:text-4xl font-bold  text-center m-5">
@@ -95,7 +99,7 @@ export default function Home() {
                 your success with love.
               </p>
             </div>
-            <div className="mt-5 mb-5">
+            {/* <div className="mt-5 mb-5">
               <h3 className="text-3xl">Personalized for your needs:</h3>
               <p>
                 Your engineering team and challenges are unique, and so are our
@@ -103,8 +107,8 @@ export default function Home() {
                 fit your specific needs. We're here to empower your success with
                 custom-built, love-powered solutions.
               </p>
-            </div>
-            <div className="block">
+            </div> */}
+            {/* <div className="block">
               <div className="stats max-md:stats-vertical shadow">
                 <div className="stat">
                   <div className="stat-figure text-primary">
@@ -153,12 +157,12 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
-      <div className="divider"></div>
-      <div className=" bg-base-100 min-h-screen">
+      {/* <div className="divider"></div> */}
+      {/* <div className=" bg-base-100 min-h-screen">
         <div className="flex justify-center">
           <div className="max-w-lg p-7">
             <h2 className="text-4xl font-bold">Things we can help with.</h2>
@@ -280,7 +284,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="divider"></div>
       <div className=" bg-base-100 p-10">
         <div className="flex justify-center">
