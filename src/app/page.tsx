@@ -162,7 +162,7 @@ export default function Home() {
         </div>
       </div>
       {/* <div className="divider"></div> */}
-      {/* <div className=" bg-base-100 min-h-screen">
+      <div className=" bg-base-100 min-h-screen">
         <div className="flex justify-center">
           <div className="max-w-lg p-7">
             <h2 className="text-4xl font-bold">Things we can help with.</h2>
@@ -284,7 +284,7 @@ export default function Home() {
             </ul>
           </div>
         </div>
-      </div> */}
+      </div>
       <div className="divider"></div>
       <div className=" bg-base-100 p-10">
         <div className="flex justify-center">
