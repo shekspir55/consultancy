@@ -65,7 +65,10 @@ export default function Home() {
             <h3>Site is under construction.</h3>
           </div>
           <div className="avatar hidden md:flex">
-            <img src="/ruben.png" className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2" />
+            <img
+              src="/ruben.png"
+              className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2"
+            />
           </div>
         </div>
       </div>
@@ -161,7 +164,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {/* <div className="divider"></div> */}
+      <div className="divider"></div>
       <div className=" bg-base-100 min-h-screen">
         <div className="flex justify-center">
           <div className="max-w-lg p-7">
@@ -283,6 +286,33 @@ export default function Home() {
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div className="divider"></div>
+      <div className="flex justify-center">
+        <div className="flex flex-col">
+          <h2 className="text-4xl font-bold p-5 block text-center">
+            Our case studies
+          </h2>
+          <div className="flex justify-center">
+            <a
+              className="btn btn-secondary m-5"
+              href="https://t.me/poweredCommunity"
+              target="_blank"
+            >
+              Join Our Telegram community
+            </a>
+          </div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/wOBOWZ7I-sM?si=QjOVjj-4DJUcv2ww"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerpolicy="strict-origin-when-cross-origin"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
       <div className="divider"></div>
