@@ -62,7 +62,89 @@ export default function Home() {
               </svg>
               Book Your Free Consultation
             </a>
-            <h3>Site is under construction.</h3>
+
+            <div className="flex justify-center m-5">
+              <div className="rating rating-lg rating-half">
+                <input
+                  disabled
+                  type="radio"
+                  name="rating-10"
+                  className="rating-hidden"
+                />
+                <input
+                  disabled
+                  type="radio"
+                  name="rating-10"
+                  className="mask mask-star-2 mask-half-1 bg-orange-400"
+                />
+                <input
+                  disabled
+                  type="radio"
+                  name="rating-10"
+                  className="mask mask-star-2 mask-half-2 bg-orange-400"
+                />
+                <input
+                  disabled
+                  type="radio"
+                  name="rating-10"
+                  className="mask mask-star-2 mask-half-1 bg-orange-400"
+                  defaultChecked
+                />
+                <input
+                  disabled
+                  type="radio"
+                  name="rating-10"
+                  className="mask mask-star-2 mask-half-2 bg-orange-400"
+                  defaultChecked
+                />
+                <input
+                  disabled
+                  type="radio"
+                  name="rating-10"
+                  className="mask mask-star-2 mask-half-1 bg-orange-400"
+                  defaultChecked
+                />
+                <input
+                  disabled
+                  type="radio"
+                  name="rating-10"
+                  className="mask mask-star-2 mask-half-2 bg-orange-400"
+                  defaultChecked
+                />
+                <input
+                  disabled
+                  type="radio"
+                  name="rating-10"
+                  className="mask mask-star-2 mask-half-1 bg-orange-400"
+                  defaultChecked
+                />
+                <input
+                  disabled
+                  type="radio"
+                  name="rating-10"
+                  className="mask mask-star-2 mask-half-2 bg-orange-400"
+                  defaultChecked
+                />
+                <input
+                  disabled
+                  type="radio"
+                  name="rating-10"
+                  className="mask mask-star-2 mask-half-1 bg-orange-400"
+                  defaultChecked
+                />
+
+                <input
+                  disabled
+                  type="radio"
+                  name="rating-10"
+                  className="mask mask-star-2 mask-half-2 bg-orange-400"
+                />
+              </div>
+            </div>
+            <h4>
+              Anonymous client survey: 4.57/5 overall satisfaction rating.
+            </h4>
+            <h3>Site is under constant renovation.</h3>
           </div>
           <div className="avatar hidden md:flex">
             <img
@@ -84,9 +166,10 @@ export default function Home() {
               Suggestions are not enough: We drive and own the results.
             </p>
             <div className="mt-5 mb-5">
-              <h1 className="text-3xl">
-                Dedicated to solving your <b>hard problems</b> - doing whatever
-                it takes.
+              <h1 className="">
+                Juggling stakeholders and sales while managing your engineering
+                team? Let us handle the technical details so you can focus on
+                what you do best.{" "}
               </h1>
 
               <h1 className="text-3xl md:text-4xl font-bold  text-center m-5">
@@ -95,11 +178,8 @@ export default function Home() {
               </h1>
 
               <p>
-                Love Guarantee: Fall in love with our service or it's on us. If
-                you're not completely satisfied with our tailored solutions
-                within the first month, we'll refund your investment, no
-                questions asked. We're that confident in our ability to power
-                your success with love.
+                Love Guaranteed: Not satisfied after a month? Full refund, no
+                questions asked. We are that confident.
               </p>
             </div>
             {/* <div className="mt-5 mb-5">
@@ -196,7 +276,6 @@ export default function Home() {
                   <li>
                     Implementing and structuring team communication platforms
                   </li>
-                  <li>Setting up role-based permissions and integrations</li>
                 </ul>
               </li>
               <li>
@@ -232,9 +311,11 @@ export default function Home() {
                 Code Quality Enhancement
                 <HardBadge />
                 <ul className="list-decimal ml-10 font-normal">
-                  <li>Implementing code quality analysis tools</li>
+                  <li>
+                    Implementing code quality analysis tools, practices and
+                    guidelines
+                  </li>
                   <li>Setting up pre-commit hooks and linters</li>
-                  <li>Establishing code review guidelines</li>
                 </ul>
               </li>
               <li>
