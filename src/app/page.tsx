@@ -385,8 +385,8 @@ export default function Home() {
             </a>
           </div>
           <iframe
-            width="560"
-            height="315"
+            width="320"
+            height="150"
             src="https://www.youtube.com/embed/wOBOWZ7I-sM?si=QjOVjj-4DJUcv2ww"
             title="YouTube video player"
             frameBorder="0"
