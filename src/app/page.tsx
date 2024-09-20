@@ -144,7 +144,8 @@ export default function Home() {
             <h4>
               Anonymous client survey: 4.57/5 overall satisfaction rating.
             </h4>
-            <h3>Site is under constant renovation.</h3>
+            <br />
+            <h3>Site is under construction.</h3>
           </div>
           <div className="avatar hidden md:flex">
             <img

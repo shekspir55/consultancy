@@ -39,9 +39,9 @@ export default function WhatWeDo() {
   }, []);
 
   return (
-    <div className="text-primary md:text-7xl md:h-[300px] h-[140px] text-5xl font-bold align-bottom flex items-end justify-center mb-5">
+    <div className="text-primary md:text-7xl text-5xl font-bold align-bottom flex items-end justify-center mb-5 min-h-[4lh]">
       <span className="h-30">
-        We will help you <br /> <div className="h-[2lh]">{field}</div>
+        We will help you <br /> <div className="min-h-[2lh]">{field}</div>
       </span>
       {fields.map((field) => (
         <div className="hidden">
