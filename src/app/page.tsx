@@ -43,7 +43,7 @@ export default function Home() {
             </h2>
             <a
               className="btn btn-neutral m-10 md:btn-lg"
-              href="https://cal.com/ruben-k"
+              href="https://cal.com/ruben-pbl/"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
