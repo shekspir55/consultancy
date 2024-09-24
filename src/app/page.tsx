@@ -434,7 +434,7 @@ export default function Home() {
                       className="btn btn-primary"
                       href="https://www.linkedin.com/in/ruben-kh/"
                     >
-                      Connect with CEO via linkedin
+                      Connect with via linkedin
                     </a>
                   </div>
                 </div>
