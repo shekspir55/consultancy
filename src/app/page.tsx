@@ -43,6 +43,7 @@ export default function Home() {
             </h2>
             <a
               className="btn btn-neutral m-10 md:btn-lg"
+              target="_blank"
               href="https://cal.com/ruben-pbl/"
             >
               <svg
