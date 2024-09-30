@@ -15,7 +15,7 @@ posthog.init('phc_FgF3J6Moe1mDVa3ed8z19wWaCsqCwrHEVeogJuedHW',
 export default function WhatWeDo() {
   const fields = [
     "optimize team structure",
-    "scale slower",
+    "scale the team slower",
     "cut costs on servers",
     "cut costs on inefficiency",
     "hire and build a team",
@@ -32,7 +32,7 @@ export default function WhatWeDo() {
       if (iterator === fields.length) {
         iterator = 0;
       }
-    }, 2000);
+    }, 1200);
     return () => {
       clearInterval(interval);
     };
@@ -41,11 +41,11 @@ export default function WhatWeDo() {
   return (
     <div className="text-primary md:text-7xl text-5xl font-bold align-bottom flex items-end justify-center mb-5 min-h-[4lh]">
       <span className="h-30">
-        You need <br /> <div className="min-h-[2lh]">{field}</div>
+        You need to <br /> <div className="min-h-[2lh]">{field}</div>
       </span>
       {fields.map((field) => (
         <div className="hidden">
-          You need <br /> {field}{" "}
+          You need to<br /> {field}{" "}
         </div>
       ))}
     </div>

@@ -149,12 +149,12 @@ export default function Home() {
             <br />
             <h3>Site is under construction.</h3>
           </div>
-          <div className="avatar hidden md:flex">
+          {/* <div className="avatar hidden md:flex">
             <img
               src="/ruben.png"
               className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2"
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="divider"></div>
