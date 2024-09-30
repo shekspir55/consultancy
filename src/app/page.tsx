@@ -1,6 +1,7 @@
 import HardBadge from "./common/hard-badge";
 import SoftBadge from "./common/soft-badge";
 import WhatWeDo from "./common/what-we-do";
+import Image from "next/image";
 
 export default function Home() {
   const steps = [
@@ -39,7 +40,7 @@ export default function Home() {
           <div className="container">
             <h2 className="text-4xl mb-5">
               <WhatWeDo />
-              Software engineering management and consultancy
+              Software engineering management consultancy
             </h2>
             <a
               className="btn btn-neutral m-10 md:btn-lg"
@@ -208,7 +209,7 @@ export default function Home() {
             </div>
           </div>
           <a
-            className="btn btn-block"
+            className="btn btn-block btn-lg"
             target="_blank"
             href="https://cal.com/ruben-pbl/"
           >
@@ -216,7 +217,39 @@ export default function Home() {
           </a>
         </div>
       </div>
-
+      <div className="divider"></div>
+      <div>
+        <div>
+          <div className="flex justify-center text-center">
+            <div className="container">
+              <div className=" flex  flex-col items-center">
+                <h2 className="text-4xl lg:text-6xl font-bold m-5">
+                  Our cases
+                </h2>
+                <a href="https://solicy.net/" target="_blank" className="m-10">
+                  <Image
+                    src="/logos/solicy.png"
+                    width={200}
+                    height={300}
+                    alt="Solicy logo"
+                  />
+                </a>
+              </div>
+              <div>
+                <h2 className="text-3xl lg:text-5xl font-bold mb-10">
+                  Our journey
+                </h2>
+                <Image
+                  src="/logos/our-journey.png"
+                  width={3000}
+                  height={300}
+                  alt="Our journey logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div className="divider"></div>
       <div className="bg-base-100">
         <div className="max-w-lg mx-auto">
@@ -245,65 +278,6 @@ export default function Home() {
                 questions asked. We are that confident.
               </p>
             </div>
-            {/* <div className="mt-5 mb-5">
-              <h3 className="text-3xl">Personalized for your needs:</h3>
-              <p>
-                Your engineering team and challenges are unique, and so are our
-                solutions. At powered-by.love, we craft tailored strategies that
-                fit your specific needs. We're here to empower your success with
-                custom-built, love-powered solutions.
-              </p>
-            </div> */}
-            {/* <div className="block">
-              <div className="stats max-md:stats-vertical shadow">
-                <div className="stat">
-                  <div className="stat-figure text-primary">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      className="inline-block h-8 w-8 stroke-current"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div className="stat-title">Get</div>
-                  <div className="stat-value text-primary">12+</div>
-                  <div className="stat-desc">
-                    year experts help you <br />
-                    with your projects
-                  </div>
-                </div>
-                <div className="stat">
-                  <div className="stat-figure text-secondary">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      className="inline-block h-8 w-8 stroke-current"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M13 10V3L4 14h7v7l9-11h-7z"
-                      ></path>
-                    </svg>
-                  </div>
-                  <div className="stat-title">More than</div>
-                  <div className="stat-value text-secondary">80+h</div>
-                  <div className="stat-desc">
-                    Spent on your projects <br />
-                    and team each month
-                  </div>
-                </div>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
