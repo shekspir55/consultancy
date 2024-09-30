@@ -157,7 +157,68 @@ export default function Home() {
         </div>
       </div>
       <div className="divider"></div>
-      <div className=" bg-base-100">
+      <div className="flex justify-center">
+        <div className="container">
+          <h2 className="text-5xl md:text-6xl font-bold mb-10 text-center">
+            Our services
+          </h2>
+          <div className="flex flex-col lg:flex-row justify-around lg:space-x-5 space-x-0 space-y-5 lg:space-y-0 mb-5">
+            <div className="card bg-slate-50 text-primary-content w-30 shadow-xl">
+              <div className="card-body">
+                <h2 className="card-title">
+                  Startups: non technical and for technical founders
+                  <div className="badge badge-secondary">NEW</div>
+                </h2>
+                <ul className="list-disc">
+                  <li>Fractional CTO services</li>
+                  <li>Technical Talent Acquisition</li>
+                  <li>Strategic Tech Planning</li>
+                  <li>Scaling your team slowly</li>
+                  <li>Technical due diligence</li>
+                </ul>
+              </div>
+            </div>
+            <div className="card bg-slate-50 text-primary-content w-30 shadow-xl">
+              <div className="card-body">
+                <h2 className="card-title">
+                  Software development agencies and service providers
+                </h2>
+                <ul className="list-disc">
+                  <li>Technical Team performance optimization</li>
+                  <li>Tech Leadership Mentoring</li>
+                  <li>Server cost optimization</li>
+                  <li>Cost cutting and team optimizations</li>
+                </ul>
+              </div>
+            </div>
+            <div className="card bg-slate-50 text-primary-content w-30 shadow-xl">
+              <div className="card-body">
+                <h2 className="card-title">Non technical companies</h2>
+                <ul className="list-disc">
+                  <li>Software proposition and consultancy</li>
+                  <li>Open-source alternatives for proprietary software</li>
+                  <li>
+                    Basic networking and security services / VPN and backup
+                    systems
+                  </li>
+                  <li>Infrastructure setup</li>
+                  <li>Build operate transfer models</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <a
+            className="btn btn-block"
+            target="_blank"
+            href="https://cal.com/ruben-pbl/"
+          >
+            Let's meet and explore your needs
+          </a>
+        </div>
+      </div>
+
+      <div className="divider"></div>
+      <div className="bg-base-100">
         <div className="max-w-lg mx-auto">
           <div className="container p-3">
             <h2 className="text-5xl md:text-6xl font-bold mb-10">
@@ -247,136 +308,9 @@ export default function Home() {
         </div>
       </div>
       <div className="divider"></div>
-      <div className=" bg-base-100 min-h-screen">
-        <div className="flex justify-center">
-          <div className="max-w-lg p-7">
-            <h2 className="text-4xl font-bold">Things we can help with.</h2>
-            <br />
-            <ul className="list-disc font-bold">
-              <li>
-                Technical Supervision and Code Review
-                <HardBadge />
-                <ul className="list-decimal ml-10 font-normal">
-                  <li>Conducting thorough PR reviews</li>
-                  <li>Providing ongoing technical supervision for projects</li>
-                </ul>
-              </li>
-              <li>
-                Project Management Improvement
-                <SoftBadge />
-                <HardBadge />
-                <ul className="list-decimal ml-10 font-normal">
-                  <li>Setting up and optimizing project management tools</li>
-                  <li>Implementing Agile methodologies (e.g., Kanban)</li>
-                  <li>Establishing sprint planning and review processes</li>
-                </ul>
-              </li>
-              <li>
-                Communication Enhancement
-                <SoftBadge />
-                <ul className="list-decimal ml-10 font-normal">
-                  <li>
-                    Implementing and structuring team communication platforms
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Documentation and Knowledge Sharing
-                <HardBadge />
-                <ul className="list-decimal ml-10 font-normal">
-                  <li>Implementing collaborative documentation tools</li>
-                  <li>Creating centralized knowledge bases</li>
-                  <li>Establishing documentation processes</li>
-                </ul>
-              </li>
-              <li>
-                Product management and Quality Assurance Improvement
-                <HardBadge />
-                <ul className="list-decimal ml-10 font-normal">
-                  <li>Setting up test management systems</li>
-                  <li>Creating Product Requirements Documents (PRDs)</li>
-                  <li>Developing testing scenarios</li>
-                </ul>
-              </li>
-              <li>
-                CI/CD Implementation
-                <HardBadge />
-                <ul className="list-decimal ml-10 font-normal">
-                  <li>
-                    Setting up continuous integration and deployment pipelines
-                  </li>
-                  <li>Implementing automated builds, tests, and deployments</li>
-                  <li>Establishing feature flag systems</li>
-                </ul>
-              </li>
-              <li>
-                Code Quality Enhancement
-                <HardBadge />
-                <ul className="list-decimal ml-10 font-normal">
-                  <li>
-                    Implementing code quality analysis tools, practices and
-                    guidelines
-                  </li>
-                  <li>Setting up pre-commit hooks and linters</li>
-                </ul>
-              </li>
-              <li>
-                Testing Practices Optimization
-                <HardBadge />
-                <ul className="list-decimal ml-10 font-normal">
-                  <li>Implementing unit and end-to-end testing frameworks</li>
-                  <li>Introducing Test-Driven Development (TDD)</li>
-                  <li>Setting code coverage requirements</li>
-                </ul>
-              </li>
-              <li>
-                Bug Tracking and Monitoring
-                <HardBadge />
-                <ul className="list-decimal ml-10 font-normal">
-                  <li>
-                    Implementing bug tracking and user behavior monitoring tools
-                  </li>
-                  <li>
-                    Establishing bug reporting and prioritization processes
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Employee Engagement and Culture Building
-                <SoftBadge />
-                <ul className="list-decimal ml-10 font-normal">
-                  <li>Implementing recognition systems</li>
-                  <li>Designing performance review processes</li>
-                  <li>Organizing team-building activities</li>
-                </ul>
-              </li>
-              <li>
-                Leadership and Management Training
-                <SoftBadge />
-                <ul className="list-decimal ml-10 font-normal">
-                  <li>Providing leadership trainings</li>
-                  <li>Implementing 360-degree feedback systems</li>
-                </ul>
-              </li>
-              <li>
-                Organizational Structure Optimization
-                <SoftBadge />
-                <ul className="list-decimal ml-10 font-normal">
-                  <li>Defining clear roles and responsibilities</li>
-                  <li>Flattening communication structures</li>
-                  <li>Creating cross-functional teams</li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div className="divider"></div>
       <div className="flex justify-center">
         <div className="flex flex-col">
-          <h2 className="text-4xl font-bold p-5 block text-center">
-            Our case studies
-          </h2>
+          <h2 className="text-4xl font-bold p-5 block text-center">Podcasts</h2>
           <div className="flex justify-center">
             <a
               className="btn btn-secondary m-5"
@@ -458,6 +392,42 @@ export default function Home() {
           </svg>
           <p>LovePowered llc {new Date().getFullYear()}</p>
         </aside>
+        <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+          <a
+            href="https://www.youtube.com/@Powered.Podcast"
+            target="_blank"
+            className="link"
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 236 236"
+              xmlns="http://www.w3.org/2000/svg"
+              fillRule="evenodd"
+              clipRule="evenodd"
+              className="fill-current inline"
+            >
+              <path d="M234.33057,69.79736a23.96369,23.96369,0,0,0-14.50489-16.34619C185.55615,40.28223,130.97949,40.39209,128,40.40771c-2.978-.02392-57.55518-.126-91.8252,13.04346A23.96415,23.96415,0,0,0,21.66992,69.79639C19.083,79.72705,16,97.88574,16,128c0,30.11377,3.083,48.27246,5.66943,58.20264a23.96369,23.96369,0,0,0,14.50489,16.34619c32.80615,12.60693,84.22168,13.04541,91.167,13.04541.6206.00049.69678.00049,1.31738,0,6.95069-.00049,58.36231-.43945,91.16651-13.04541a23.96415,23.96415,0,0,0,14.50488-16.34522C236.917,176.273,240,158.11426,240,128,240,97.88623,236.917,79.72754,234.33057,69.79736Zm-72.11182,61.53076-48,32A3.99967,3.99967,0,0,1,108,160V96a3.99968,3.99968,0,0,1,6.21875-3.32813l48,32a3.99979,3.99979,0,0,1,0,6.65625Z" />
+            </svg>
+          </a>
+          <a
+            href="https://t.me/poweredCommunity"
+            target="_blank"
+            className="link"
+          >
+            <svg
+              width="30"
+              height="30"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              fillRule="evenodd"
+              clipRule="evenodd"
+              className="fill-current inline"
+            >
+              <path d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM12.3583 9.38244C11.3857 9.787 9.44177 10.6243 6.52657 11.8944C6.05318 12.0827 5.8052 12.2669 5.78263 12.4469C5.74448 12.7513 6.12559 12.8711 6.64455 13.0343C6.71515 13.0565 6.78829 13.0795 6.86327 13.1038C7.37385 13.2698 8.06068 13.464 8.41773 13.4717C8.74161 13.4787 9.1031 13.3452 9.50219 13.0711C12.226 11.2325 13.632 10.3032 13.7202 10.2831C13.7825 10.269 13.8688 10.2512 13.9273 10.3032C13.9858 10.3552 13.98 10.4536 13.9738 10.48C13.9361 10.641 12.4401 12.0318 11.6659 12.7515C11.4246 12.9759 11.2534 13.135 11.2184 13.1714C11.14 13.2528 11.0601 13.3298 10.9833 13.4038C10.509 13.8611 10.1532 14.204 11.003 14.764C11.4114 15.0331 11.7381 15.2556 12.0641 15.4776C12.4201 15.7201 12.7752 15.9619 13.2347 16.2631C13.3517 16.3398 13.4635 16.4195 13.5724 16.4971C13.9867 16.7925 14.3589 17.0579 14.8188 17.0155C15.086 16.991 15.362 16.7397 15.5022 15.9903C15.8335 14.2193 16.4847 10.382 16.6352 8.80081C16.6484 8.66228 16.6318 8.48498 16.6185 8.40715C16.6051 8.32932 16.5773 8.21842 16.4761 8.13633C16.3563 8.03911 16.1714 8.01861 16.0886 8.02C15.7125 8.0267 15.1354 8.22735 12.3583 9.38244Z" />{" "}
+            </svg>
+          </a>
+        </nav>
       </footer>
     </div>
   );
