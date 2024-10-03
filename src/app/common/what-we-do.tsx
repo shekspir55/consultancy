@@ -17,8 +17,8 @@ export default function WhatWeDo() {
     "optimize team structure",
     "scale the team slower",
     "cut costs on servers",
-    "cut costs on inefficiency",
-    "hire and build a team",
+    "increase efficiency",
+    "hire and build a tech team",
   ];
 
   const [field, setField] = useState(fields[0]);

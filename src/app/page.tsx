@@ -4,33 +4,9 @@ import WhatWeDo from "./common/what-we-do";
 import Image from "next/image";
 
 export default function Home() {
-  const steps = [
-    {
-      title: "Getting in touch",
-      done: true,
-    },
-    {
-      title: "Agreeing on scope",
-      done: true,
-    },
-    {
-      title: "Interviewing team members",
-    },
-    {
-      title: "Identifying",
-    },
-    {
-      title: "Presenting a plan of improvement",
-    },
-    {
-      title: "Prioritizing",
-    },
-    {
-      title: "Implementing",
-    },
-    {
-      title: "Reiterating",
-    },
+  const podcastURLs = [
+    "https://www.youtube.com/embed/wOBOWZ7I-sM?si=QjOVjj-4DJUcv2ww",
+    "https://www.youtube.com/embed/djQ7b6BVkd4?si=PlrK9-XzJtQxAert",
   ];
 
   return (
@@ -146,8 +122,6 @@ export default function Home() {
             <h4>
               Anonymous client survey: 4.57/5 overall satisfaction rating.
             </h4>
-            <br />
-            <h3>Site is under construction.</h3>
           </div>
           {/* <div className="avatar hidden md:flex">
             <img
@@ -170,7 +144,7 @@ export default function Home() {
                   Startups: non technical and for technical founders
                   <div className="badge badge-secondary">NEW</div>
                 </h2>
-                <ul className="list-disc">
+                <ul className="list-decimal">
                   <li>Fractional CTO services</li>
                   <li>Technical Talent Acquisition</li>
                   <li>Strategic Tech Planning</li>
@@ -184,7 +158,7 @@ export default function Home() {
                 <h2 className="card-title">
                   Software development agencies and service providers
                 </h2>
-                <ul className="list-disc">
+                <ul className="list-decimal">
                   <li>Technical Team performance optimization</li>
                   <li>Tech Leadership Mentoring</li>
                   <li>Server cost optimization</li>
@@ -195,7 +169,7 @@ export default function Home() {
             <div className="card bg-slate-50 text-primary-content w-30 shadow-xl">
               <div className="card-body">
                 <h2 className="card-title">Non technical companies</h2>
-                <ul className="list-disc">
+                <ul className="list-decimal">
                   <li>Software proposition and consultancy</li>
                   <li>Open-source alternatives for proprietary software</li>
                   <li>
@@ -209,7 +183,7 @@ export default function Home() {
             </div>
           </div>
           <a
-            className="btn btn-block btn-lg"
+            className="btn btn-block btn-lg btn-neutral"
             target="_blank"
             href="https://cal.com/ruben-pbl/"
           >
@@ -294,16 +268,21 @@ export default function Home() {
               Join Our Telegram community
             </a>
           </div>
-          <iframe
-            width="320"
-            height="150"
-            src="https://www.youtube.com/embed/wOBOWZ7I-sM?si=QjOVjj-4DJUcv2ww"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerPolicy="strict-origin-when-cross-origin"
-            allowFullScreen
-          ></iframe>
+          <div className="flex flex-col gap-y-5">
+            {podcastURLs.map((podcastURL) => (
+              <iframe
+                key={podcastURL}
+                width="320"
+                height="150"
+                src={podcastURL}
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin"
+                allowfullscreen
+              ></iframe>
+            ))}
+          </div>
         </div>
       </div>
       <div className="divider"></div>
