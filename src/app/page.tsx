@@ -148,7 +148,7 @@ export default function Home() {
                   <li>Fractional CTO services</li>
                   <li>Technical Talent Acquisition</li>
                   <li>Strategic Tech Planning</li>
-                  <li>Scaling your team slowly</li>
+                  <li>Scaling your team efficiently</li>
                   <li>Technical due diligence</li>
                 </ul>
               </div>
