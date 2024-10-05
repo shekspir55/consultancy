@@ -9,6 +9,8 @@ export default function Home() {
     "https://www.youtube.com/embed/djQ7b6BVkd4?si=PlrK9-XzJtQxAert",
   ];
 
+  const link = "https://cal.com/ruben-pbl/";
+
   return (
     <div>
       <div className="hero bg-base-100 min-h-screen">
@@ -21,7 +23,7 @@ export default function Home() {
             <a
               className="btn btn-neutral m-10 md:btn-lg"
               target="_blank"
-              href="https://cal.com/ruben-pbl/"
+              href={link}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -185,7 +187,7 @@ export default function Home() {
           <a
             className="btn btn-block btn-lg btn-neutral"
             target="_blank"
-            href="https://cal.com/ruben-pbl/"
+            href={link}
           >
             Let's meet and explore your needs
           </a>
@@ -227,22 +229,39 @@ export default function Home() {
       <div className="divider"></div>
       <div className="bg-base-100">
         <div className="max-w-lg mx-auto">
-          <div className="container p-3">
-            <h2 className="text-5xl md:text-6xl font-bold mb-10">
-              Why choose us?
-            </h2>
-
+          <div className="container p-3 flex flex-col space-y-5">
+            <h2 className="text-5xl md:text-6xl font-bold">Why choose us?</h2>
+            <div className="alert p-5">
+              <span>
+                <h1 className="text-xl font-bold">
+                  The "No Problem" Challenge:
+                </h1>
+                <div className="h3 p-2">
+                  You claim you don't have issues? Let's put that to the test.
+                </div>
+                <ul className="list-decimal p-5">
+                  <li>We'll assess your software processes.</li>
+                  <li>If we find issues you agree with, you hire us.</li>
+                  <li>If not, we walk away.</li>
+                </ul>
+                <br />
+                <div>No risk, potential high reward.</div>
+              </span>
+            </div>
+            <a target="_blank" href={link} className="btn btn-neutral">
+              Prove Us Wrong
+            </a>
             <p className="">
               Suggestions are not enough: We drive and own the results.
             </p>
-            <div className="mt-5 mb-5">
+            <div className="">
               <h1 className="">
                 Juggling stakeholders and sales while managing your engineering
                 team? Let us handle the technical details so you can focus on
                 what you do best.{" "}
               </h1>
 
-              <h1 className="text-3xl md:text-4xl font-bold  text-center m-5">
+              <h1 className="text-3xl md:text-4xl font-bold  text-center p-10">
                 <span className="text-5xl brightness-150">love,</span>
                 guaranteed❤️
               </h1>
@@ -296,10 +315,7 @@ export default function Home() {
                   <h2 className="card-title">Not sure yet?</h2>
                   <p>Schedule a free call or chat with us.</p>
                   <div className="card-actions justify-end">
-                    <a
-                      className="btn btn-primary"
-                      href="https://cal.com/ruben-pbl/"
-                    >
+                    <a className="btn btn-primary" href={link}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6"
@@ -317,10 +333,7 @@ export default function Home() {
                       </svg>
                       Book Free Consultation
                     </a>
-                    <a
-                      className="btn btn-primary"
-                      href="https://www.linkedin.com/in/ruben-kh/"
-                    >
+                    <a className="btn btn-primary" target="_blank" href={link}>
                       Connect with via linkedin
                     </a>
                   </div>
