@@ -229,13 +229,13 @@ export default function Home() {
       <div className="divider"></div>
       <div className="bg-base-100">
         <div className="max-w-lg mx-auto">
-          <div className="container p-3 flex flex-col space-y-5">
-            <h2 className="text-5xl md:text-6xl font-bold">Why choose us?</h2>
+          <div className="container flex flex-col space-y-5">
+            <h2 className="text-4xl md:text-6xl font-bold text-center">
+              The "No Problem" Challenge:
+            </h2>
             <div className="alert p-5 text-left">
               <span>
-                <h1 className="text-xl font-bold text-center p-2">
-                  The "No Problem" Challenge:
-                </h1>
+                <h1 className="text-xl font-bold text-center p-2"></h1>
                 <div className="font-bold">
                   You claim you don't have issues? Let's put that to the test.
                 </div>
@@ -252,18 +252,18 @@ export default function Home() {
               Prove Us Wrong
             </a>
             <div className="">
-              <h1 className="">
+              <p className="p-3">
                 Juggling stakeholders and sales while managing your engineering
                 team? Let us handle the technical details so you can focus on
                 what you do best.{" "}
-              </h1>
+              </p>
 
               <h1 className="text-3xl md:text-4xl font-bold  text-center p-10">
                 <span className="text-5xl brightness-150">love,</span>
                 guaranteed❤️
               </h1>
 
-              <p>
+              <p className="p-3">
                 Love Guaranteed: Not satisfied after a month? Full refund, no
                 questions asked. We are that confident.
               </p>
