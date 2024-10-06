@@ -231,12 +231,12 @@ export default function Home() {
         <div className="max-w-lg mx-auto">
           <div className="container p-3 flex flex-col space-y-5">
             <h2 className="text-5xl md:text-6xl font-bold">Why choose us?</h2>
-            <div className="alert p-5">
+            <div className="alert p-5 text-left">
               <span>
-                <h1 className="text-xl font-bold">
+                <h1 className="text-xl font-bold text-center p-2">
                   The "No Problem" Challenge:
                 </h1>
-                <div className="h3 p-2">
+                <div className="font-bold">
                   You claim you don't have issues? Let's put that to the test.
                 </div>
                 <ul className="list-decimal p-5">
@@ -251,9 +251,6 @@ export default function Home() {
             <a target="_blank" href={link} className="btn btn-neutral">
               Prove Us Wrong
             </a>
-            <p className="">
-              Suggestions are not enough: We drive and own the results.
-            </p>
             <div className="">
               <h1 className="">
                 Juggling stakeholders and sales while managing your engineering
