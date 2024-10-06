@@ -230,7 +230,7 @@ export default function Home() {
       <div className="bg-base-100">
         <div className="max-w-lg mx-auto">
           <div className="container flex flex-col space-y-5">
-            <h2 className="text-4xl md:text-6xl font-bold text-center">
+            <h2 className="text-4xl md:text-5xl font-bold text-center">
               The "No Problem" Challenge:
             </h2>
             <div className="alert p-5 text-left">
