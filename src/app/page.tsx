@@ -7,6 +7,9 @@ export default function Home() {
   const podcastURLs = [
     "https://www.youtube.com/embed/wOBOWZ7I-sM?si=QjOVjj-4DJUcv2ww",
     "https://www.youtube.com/embed/djQ7b6BVkd4?si=PlrK9-XzJtQxAert",
+    "https://www.youtube.com/embed/Vr5ou0poKGg?si=1PTdoR50_g1ZFGQA",
+    "https://www.youtube.com/embed/0aXFpO5FWlA?si=zExIV5TSctExjdRT",
+    "https://www.youtube.com/embed/tm2g1EGnzGc?si=3s7H03bkSuDbNJ31"
   ];
 
   const link = "https://cal.com/ruben-pbl/";
