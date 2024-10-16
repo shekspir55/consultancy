@@ -32,7 +32,7 @@ export default function Home() {
       name: "Andranik Muradyan",
       image: "./andranik.png",
       title: "TDD, Functional programming consultant",
-      years: 14,
+      years: 18,
     },
     {
       name: "Norayr Chilindaryan",
