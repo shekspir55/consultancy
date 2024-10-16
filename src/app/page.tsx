@@ -18,7 +18,7 @@ export default function Home() {
       name: "Ruben Khachatryan",
       image:
         "https://media.licdn.com/dms/image/v2/D4D03AQF0UJ2KGopx_A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715796401926?e=1734566400&v=beta&t=6ODPs24ndBO21Tg6mlU6wpTMD5fHFDONOjOGLHPzxMk",
-      title: "Engineering Management consultant",
+      title: "Engineering Management, Containerization, Documentation consultant",
       years: 12,
     },
     {
