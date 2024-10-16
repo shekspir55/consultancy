@@ -19,6 +19,7 @@ export default function Home() {
       image:
         "https://media.licdn.com/dms/image/v2/D4D03AQF0UJ2KGopx_A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715796401926?e=1734566400&v=beta&t=6ODPs24ndBO21Tg6mlU6wpTMD5fHFDONOjOGLHPzxMk",
       title: "Engineering Management consultant",
+      years: 12,
     },
     {
       name: "Marta Martirosyan",
@@ -30,23 +31,28 @@ export default function Home() {
       name: "Andranik Muradyan",
       image: "./andranik.png",
       title: "TDD, functional programming consultant",
+      years: 14,
     },
     {
       name: "Norayr Chilindaryan",
       image:
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpeople.aua.am%2Ffiles%2F2019%2F09%2F0R8A2838-e1568030053640.jpg&f=1&nofb=1&ipt=888a94e901f660829c50b0495f21b16243db1c4b7b2451616f5fa3e79bb7c5e1&ipo=images",
-      title: "Embedded systems, DevOPS, Linnux, Infarstructure consultant",
+      title:
+        "Embedded systems, DevOPS, Linnux, Infarstructure, Open source, consultant",
+      years: 28,
     },
     {
       name: "Karen Navasardyan",
       image: "karen.jpg",
       title: "Android, IOS, native mobile consultant",
+      years: 10,
     },
     {
       name: "Davit Mkrtychyan",
       image:
         "https://media.licdn.com/dms/image/v2/C4D03AQHwZEIzpEPAfg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1616346735550?e=1734566400&v=beta&t=zwIQ1H667UWuNfKVxtASZk2rIHi0YN5oeM6uXlRhZwI",
       title: "Web editor, Video editor, Web image editor consultant",
+      years: 5,
     },
     {
       name: "Artyom Sukiasyan",
@@ -273,9 +279,9 @@ export default function Home() {
       </div>
       <div className="divider"></div>
       <div className=" container m-auto flex flex-col justify-center">
-        <h2 className="text-5xl font-bold text-center m-5">Consultants </h2>
+        <h2 className="text-5xl font-bold text-center m-5">Experienced Consultants </h2>
         <div className="flex flex-col md:flex-row justify-around flex-wrap">
-          {consultants.map((consultant) => (
+          {consultants.filter(({years})=>years).map((consultant) => (
             <div className="card bg-slate-50 w-60 shadow-xl m-5">
               <figure>
                 <img
@@ -293,6 +299,7 @@ export default function Home() {
                     </>
                   ))}
                 </h2>
+                <b>{consultant.years} Years</b>
                 <p>{consultant.title}</p>
               </div>
             </div>
