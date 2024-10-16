@@ -18,7 +18,8 @@ export default function Home() {
       name: "Ruben Khachatryan",
       image:
         "https://media.licdn.com/dms/image/v2/D4D03AQF0UJ2KGopx_A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715796401926?e=1734566400&v=beta&t=6ODPs24ndBO21Tg6mlU6wpTMD5fHFDONOjOGLHPzxMk",
-      title: "Engineering Management, Containerization, Documentation consultant",
+      title:
+        "Engineering Management, Containerization, Documentation consultant",
       years: 12,
     },
     {
@@ -30,7 +31,7 @@ export default function Home() {
     {
       name: "Andranik Muradyan",
       image: "./andranik.png",
-      title: "TDD, functional programming consultant",
+      title: "TDD, Functional programming consultant",
       years: 14,
     },
     {
@@ -38,7 +39,7 @@ export default function Home() {
       image:
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpeople.aua.am%2Ffiles%2F2019%2F09%2F0R8A2838-e1568030053640.jpg&f=1&nofb=1&ipt=888a94e901f660829c50b0495f21b16243db1c4b7b2451616f5fa3e79bb7c5e1&ipo=images",
       title:
-        "Embedded systems, DevOPS, Linnux, Infarstructure, Open source, consultant",
+        "Embedded systems, DevOPS, Linnux, Infarstructure, Open source consultant",
       years: 28,
     },
     {
@@ -263,9 +264,7 @@ export default function Home() {
                 </a>
               </div>
               <div>
-                <h2 className="text-3xl lg:text-5xl font-bold mb-10">
-                  Journey
-                </h2>
+                <h2 className="text-4xl lg:text-6xl font-bold m-5">Journey</h2>
                 <Image
                   src="/logos/our-journey.png"
                   width={3000}
@@ -279,31 +278,35 @@ export default function Home() {
       </div>
       <div className="divider"></div>
       <div className=" container m-auto flex flex-col justify-center">
-        <h2 className="text-5xl font-bold text-center m-5">Experienced Consultants </h2>
+        <h2 className="text-5xl font-bold text-center m-5">
+          Experienced Consultants{" "}
+        </h2>
         <div className="flex flex-col md:flex-row justify-around flex-wrap">
-          {consultants.filter(({years})=>years).map((consultant) => (
-            <div className="card bg-slate-50 w-60 shadow-xl m-5">
-              <figure>
-                <img
-                  src={consultant.image}
-                  alt={consultant.name + " image"}
-                  className="grayscale object-cover h-60 w-60"
-                />
-              </figure>
-              <div className="card-body">
-                <h2 className="card-title">
-                  {consultant.name.split(" ").map((n) => (
-                    <>
-                      {n}
-                      <br />
-                    </>
-                  ))}
-                </h2>
-                <b>{consultant.years} Years</b>
-                <p>{consultant.title}</p>
+          {consultants
+            .filter(({ years }) => years)
+            .map((consultant) => (
+              <div className="card bg-slate-50 w-60 shadow-xl m-5">
+                <figure>
+                  <img
+                    src={consultant.image}
+                    alt={consultant.name + " image"}
+                    className="grayscale object-cover h-60 w-60"
+                  />
+                </figure>
+                <div className="card-body">
+                  <h2 className="card-title uppercase">
+                    {consultant.name.split(" ").map((n) => (
+                      <>
+                        {n}
+                        <br />
+                      </>
+                    ))}
+                  </h2>
+                  <b>{consultant.years} Years</b>
+                  <p className="capitalize">{consultant.title}</p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
         </div>
       </div>
       <div className="divider"></div>
