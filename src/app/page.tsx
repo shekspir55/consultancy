@@ -1,3 +1,4 @@
+import { title } from "process";
 import HardBadge from "./common/hard-badge";
 import SoftBadge from "./common/soft-badge";
 import WhatWeDo from "./common/what-we-do";
@@ -9,7 +10,50 @@ export default function Home() {
     "https://www.youtube.com/embed/djQ7b6BVkd4?si=PlrK9-XzJtQxAert",
     "https://www.youtube.com/embed/Vr5ou0poKGg?si=1PTdoR50_g1ZFGQA",
     "https://www.youtube.com/embed/0aXFpO5FWlA?si=zExIV5TSctExjdRT",
-    "https://www.youtube.com/embed/tm2g1EGnzGc?si=3s7H03bkSuDbNJ31"
+    "https://www.youtube.com/embed/tm2g1EGnzGc?si=3s7H03bkSuDbNJ31",
+  ];
+
+  const consultants = [
+    {
+      name: "Ruben Khachatryan",
+      image:
+        "https://media.licdn.com/dms/image/v2/D4D03AQF0UJ2KGopx_A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715796401926?e=1734566400&v=beta&t=6ODPs24ndBO21Tg6mlU6wpTMD5fHFDONOjOGLHPzxMk",
+      title: "Engineering Management consultant",
+    },
+    {
+      name: "Marta Martirosyan",
+      image:
+        "https://media.licdn.com/dms/image/v2/C4E03AQHN_kRBVYvoNg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1653307850422?e=1734566400&v=beta&t=RVyL31cIpcMbOqlD0CkX2ydNgiWZlmhSBkXXP_bCgbY",
+      title: "Project Management, documentation consultant",
+    },
+    {
+      name: "Andranik Muradyan",
+      image: "./andranik.png",
+      title: "TDD, functional programming consultant",
+    },
+    {
+      name: "Norayr Chilindaryan",
+      image:
+        "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpeople.aua.am%2Ffiles%2F2019%2F09%2F0R8A2838-e1568030053640.jpg&f=1&nofb=1&ipt=888a94e901f660829c50b0495f21b16243db1c4b7b2451616f5fa3e79bb7c5e1&ipo=images",
+      title: "Embedded systems, DevOPS, Linnux, Infarstructure consultant",
+    },
+    {
+      name: "Karen Navasardyan",
+      image: "karen.jpg",
+      title: "Android, IOS, native mobile consultant",
+    },
+    {
+      name: "Davit Mkrtychyan",
+      image:
+        "https://media.licdn.com/dms/image/v2/C4D03AQHwZEIzpEPAfg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1616346735550?e=1734566400&v=beta&t=zwIQ1H667UWuNfKVxtASZk2rIHi0YN5oeM6uXlRhZwI",
+      title: "Web editor, Video editor, Web image editor consultant",
+    },
+    {
+      name: "Artyom Sukiasyan",
+      image:
+        "https://media.licdn.com/dms/image/v2/C4E03AQFT-28GAZ6vMQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1635353559312?e=1734566400&v=beta&t=KrFFGuXImS4KKE2TqNC7hLaTt76mdOmQRRSKDd_xYt0",
+      title: "Code review consultant",
+    },
   ];
 
   const link = "https://cal.com/ruben-pbl/";
@@ -202,9 +246,7 @@ export default function Home() {
           <div className="flex justify-center text-center">
             <div className="container">
               <div className=" flex  flex-col items-center">
-                <h2 className="text-4xl lg:text-6xl font-bold m-5">
-                  Our cases
-                </h2>
+                <h2 className="text-4xl lg:text-6xl font-bold m-5">Cases</h2>
                 <a href="https://solicy.net/" target="_blank" className="m-10">
                   <Image
                     src="/logos/solicy.png"
@@ -216,7 +258,7 @@ export default function Home() {
               </div>
               <div>
                 <h2 className="text-3xl lg:text-5xl font-bold mb-10">
-                  Our journey
+                  Journey
                 </h2>
                 <Image
                   src="/logos/our-journey.png"
@@ -230,10 +272,38 @@ export default function Home() {
         </div>
       </div>
       <div className="divider"></div>
+      <div className=" container m-auto flex flex-col justify-center">
+        <h2 className="text-5xl font-bold text-center m-5">Consultants </h2>
+        <div className="flex flex-col md:flex-row justify-around flex-wrap">
+          {consultants.map((consultant) => (
+            <div className="card bg-slate-50 w-60 shadow-xl m-5">
+              <figure>
+                <img
+                  src={consultant.image}
+                  alt={consultant.name + " image"}
+                  className="grayscale object-cover h-60 w-60"
+                />
+              </figure>
+              <div className="card-body">
+                <h2 className="card-title">
+                  {consultant.name.split(" ").map((n) => (
+                    <>
+                      {n}
+                      <br />
+                    </>
+                  ))}
+                </h2>
+                <p>{consultant.title}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="divider"></div>
       <div className="bg-base-100">
         <div className="max-w-lg mx-auto">
           <div className="container flex flex-col space-y-5">
-            <h2 className="text-4xl md:text-5xl font-bold text-center">
+            <h2 className="text-3xl font-bold text-center">
               The "No Problem" Challenge:
             </h2>
             <div className="alert p-5 text-left">
