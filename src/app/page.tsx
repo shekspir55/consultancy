@@ -2,7 +2,9 @@ import WhatWeDo from "./common/what-we-do";
 import Image from "next/image";
 import LoveGuaranteed from "./love-guaranteed";
 import Logo from "./logo";
+import StructuredData from './components/StructuredData';
 
+// website url is https://powered-by.love/
 export default function Home() {
   const podcastURLs = [
     "https://www.youtube.com/embed/wOBOWZ7I-sM?si=QjOVjj-4DJUcv2ww",
@@ -65,15 +67,15 @@ export default function Home() {
   const link = "https://cal.com/ruben-pbl/";
 
   return (
-    <div>
-      <div className="hero bg-base-100 min-h-screen">
+    <main>
+      <header className="hero bg-base-100 min-h-screen">
         <div className="hero-content text-center">
           <div className="container">
             <Logo className="m-auto" size="140"/>
-            <h2 className="text-4xl mb-5">
+            <h1 className="text-4xl mb-5">
               <WhatWeDo />
-              Software engineering management consultancy
-            </h2>
+              Software Engineering Management Consultancy
+            </h1>
             <a
               className="btn btn-neutral m-10 md:btn-lg"
               target="_blank"
@@ -186,12 +188,12 @@ export default function Home() {
             />
           </div> */}
         </div>
-      </div>
+      </header>
       <div className="divider"></div>
       <div className="flex justify-center">
         <div className="container">
           <h2 className="text-5xl text-primary md:text-6xl font-bold mb-10 text-center">
-            Our services
+            Our Software Engineering Consulting Services
           </h2>
           <div className="flex flex-col lg:flex-row justify-around lg:space-x-5 space-x-0 space-y-5 lg:space-y-0 mb-5">
             <div className="card bg-slate-50 text-primary-content w-30 shadow-xl">
@@ -365,8 +367,9 @@ export default function Home() {
               className="btn btn-primary m-5"
               href="https://t.me/poweredCommunity"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              Join Our Telegram community
+              Join Our Software Engineering Telegram Community
             </a>
           </div>
           <div className="flex flex-col gap-y-5">
@@ -480,6 +483,7 @@ export default function Home() {
           </a>
         </nav>
       </footer>
-    </div>
+      <StructuredData />
+    </main>
   );
 }
