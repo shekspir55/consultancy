@@ -109,61 +109,61 @@ export default function Home() {
                   disabled
                   type="radio"
                   name="rating-10"
-                  className="mask mask-star-2 mask-half-1 bg-orange-400"
+                  className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
                 />
                 <input
                   disabled
                   type="radio"
                   name="rating-10"
-                  className="mask mask-star-2 mask-half-2 bg-orange-400"
+                  className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
                 />
                 <input
                   disabled
                   type="radio"
                   name="rating-10"
-                  className="mask mask-star-2 mask-half-1 bg-orange-400"
+                  className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
                   defaultChecked
                 />
                 <input
                   disabled
                   type="radio"
                   name="rating-10"
-                  className="mask mask-star-2 mask-half-2 bg-orange-400"
+                  className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
                   defaultChecked
                 />
                 <input
                   disabled
                   type="radio"
                   name="rating-10"
-                  className="mask mask-star-2 mask-half-1 bg-orange-400"
+                  className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
                   defaultChecked
                 />
                 <input
                   disabled
                   type="radio"
                   name="rating-10"
-                  className="mask mask-star-2 mask-half-2 bg-orange-400"
+                  className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
                   defaultChecked
                 />
                 <input
                   disabled
                   type="radio"
                   name="rating-10"
-                  className="mask mask-star-2 mask-half-1 bg-orange-400"
+                  className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
                   defaultChecked
                 />
                 <input
                   disabled
                   type="radio"
                   name="rating-10"
-                  className="mask mask-star-2 mask-half-2 bg-orange-400"
+                  className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
                   defaultChecked
                 />
                 <input
                   disabled
                   type="radio"
                   name="rating-10"
-                  className="mask mask-star-2 mask-half-1 bg-orange-400"
+                  className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
                   defaultChecked
                 />
 
@@ -171,7 +171,7 @@ export default function Home() {
                   disabled
                   type="radio"
                   name="rating-10"
-                  className="mask mask-star-2 mask-half-2 bg-orange-400"
+                  className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
                 />
               </div>
             </div>
@@ -239,7 +239,7 @@ export default function Home() {
             </div>
           </div>
           <a
-            className="btn btn-block btn-lg btn-neutral"
+            className="btn btn-block btn-lg btn-primary"
             target="_blank"
             href={link}
           >
@@ -335,7 +335,7 @@ export default function Home() {
                 <div>No risk, potential high reward.</div>
               </span>
             </div>
-            <a target="_blank" href={link} className="btn btn-neutral">
+            <a target="_blank" href={link} className="btn btn-primary">
               Prove Us Wrong
             </a>
             <div className="">
@@ -362,7 +362,7 @@ export default function Home() {
           </h2>
           <div className="flex justify-center">
             <a
-              className="btn btn-secondary m-5"
+              className="btn btn-primary m-5"
               href="https://t.me/poweredCommunity"
               target="_blank"
             >
@@ -396,7 +396,7 @@ export default function Home() {
                   <h2 className="card-title">Not sure yet?</h2>
                   <p>Schedule a free call or chat with us.</p>
                   <div className="card-actions justify-end">
-                    <a className="btn btn-secondary" href={link}>
+                    <a className="btn btn-primary" href={link}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6"
@@ -415,7 +415,7 @@ export default function Home() {
                       Book Free Consultation
                     </a>
                     <a
-                      className="btn btn-secondary"
+                      className="btn btn-primary"
                       target="_blank"
                       href={link}
                     >
@@ -428,7 +428,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <footer className="footer bg-neutral text-neutral-content items-center p-4">
+      <footer className="footer bg-primary text-neutral-content items-center p-4">
         <aside className="grid-flow-col items-center">
           <svg
             width="36"
