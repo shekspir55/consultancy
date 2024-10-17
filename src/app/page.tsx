@@ -69,7 +69,7 @@ export default function Home() {
       <div className="hero bg-base-100 min-h-screen">
         <div className="hero-content text-center">
           <div className="container">
-            <Logo className="m-auto" size="200"/>
+            <Logo className="m-auto" size="140"/>
             <h2 className="text-4xl mb-5">
               <WhatWeDo />
               Software engineering management consultancy
