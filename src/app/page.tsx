@@ -1,8 +1,7 @@
-import { title } from "process";
-import HardBadge from "./common/hard-badge";
-import SoftBadge from "./common/soft-badge";
 import WhatWeDo from "./common/what-we-do";
 import Image from "next/image";
+import LoveGuaranteed from "./love-guaranteed";
+import Logo from "./logo";
 
 export default function Home() {
   const podcastURLs = [
@@ -70,6 +69,7 @@ export default function Home() {
       <div className="hero bg-base-100 min-h-screen">
         <div className="hero-content text-center">
           <div className="container">
+            <Logo className="m-auto" size="200"/>
             <h2 className="text-4xl mb-5">
               <WhatWeDo />
               Software engineering management consultancy
@@ -190,7 +190,7 @@ export default function Home() {
       <div className="divider"></div>
       <div className="flex justify-center">
         <div className="container">
-          <h2 className="text-5xl md:text-6xl font-bold mb-10 text-center">
+          <h2 className="text-5xl text-primary md:text-6xl font-bold mb-10 text-center">
             Our services
           </h2>
           <div className="flex flex-col lg:flex-row justify-around lg:space-x-5 space-x-0 space-y-5 lg:space-y-0 mb-5">
@@ -253,7 +253,9 @@ export default function Home() {
           <div className="flex justify-center text-center">
             <div className="container">
               <div className=" flex  flex-col items-center">
-                <h2 className="text-4xl lg:text-6xl font-bold m-5">Cases</h2>
+                <h2 className="text-4xl lg:text-6xl font-bold m-5 text-primary ">
+                  Cases
+                </h2>
                 <a href="https://solicy.net/" target="_blank" className="m-10">
                   <Image
                     src="/logos/solicy.png"
@@ -264,7 +266,9 @@ export default function Home() {
                 </a>
               </div>
               <div>
-                <h2 className="text-4xl lg:text-6xl font-bold m-5">Journey</h2>
+                <h2 className="text-4xl lg:text-6xl font-bold m-5 text-primary ">
+                  Journey
+                </h2>
                 <Image
                   src="/logos/our-journey.png"
                   width={3000}
@@ -278,7 +282,7 @@ export default function Home() {
       </div>
       <div className="divider"></div>
       <div className=" container m-auto flex flex-col justify-center">
-        <h2 className="text-5xl font-bold text-center m-5">
+        <h2 className="text-5xl font-bold text-center m-5 text-primary ">
           Experienced Consultants{" "}
         </h2>
         <div className="flex flex-col md:flex-row justify-around flex-wrap">
@@ -313,7 +317,7 @@ export default function Home() {
       <div className="bg-base-100">
         <div className="max-w-lg mx-auto">
           <div className="container flex flex-col space-y-5">
-            <h2 className="text-3xl font-bold text-center">
+            <h2 className="text-3xl font-bold text-center text-primary ">
               The "No Problem" Challenge:
             </h2>
             <div className="alert p-5 text-left">
@@ -340,11 +344,7 @@ export default function Home() {
                 team? Let us handle the technical details so you can focus on
                 what you do best.{" "}
               </p>
-
-              <h1 className="text-3xl md:text-4xl font-bold  text-center p-10">
-                <span className="text-5xl brightness-150">love,</span>
-                guaranteed❤️
-              </h1>
+              <LoveGuaranteed className="m-auto" size="150" />
 
               <p className="p-3">
                 Love Guaranteed: Not satisfied after a month? Full refund, no
@@ -357,7 +357,9 @@ export default function Home() {
       <div className="divider"></div>
       <div className="flex justify-center">
         <div className="flex flex-col">
-          <h2 className="text-4xl font-bold p-5 block text-center">Podcasts</h2>
+          <h2 className="text-4xl font-bold p-5 block text-center text-primary ">
+            Podcasts
+          </h2>
           <div className="flex justify-center">
             <a
               className="btn btn-secondary m-5"
@@ -385,17 +387,16 @@ export default function Home() {
         </div>
       </div>
       <div className="divider"></div>
-      <div className=" bg-base-100 p-10">
+      <div className=" p-10">
         <div className="flex justify-center">
           <div className="max-w-lg">
-            <br />
             <div className="flex justify-center">
-              <div className="card bg-base-100 image-full w-100 shadow-xl">
+              <div className="card w-100 shadow-xl">
                 <div className="card-body">
                   <h2 className="card-title">Not sure yet?</h2>
                   <p>Schedule a free call or chat with us.</p>
                   <div className="card-actions justify-end">
-                    <a className="btn btn-primary" href={link}>
+                    <a className="btn btn-secondary" href={link}>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         className="h-6 w-6"
@@ -413,7 +414,11 @@ export default function Home() {
                       </svg>
                       Book Free Consultation
                     </a>
-                    <a className="btn btn-primary" target="_blank" href={link}>
+                    <a
+                      className="btn btn-secondary"
+                      target="_blank"
+                      href={link}
+                    >
                       Connect with via linkedin
                     </a>
                   </div>

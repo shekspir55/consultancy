@@ -18,7 +18,29 @@ const config: Config = {
   },
   plugins: [daisyui],
   daisyui: {
-    themes: ["valentine"],
+    themes: [
+      {
+        mytheme: {
+          primary: "#6B78CB",
+
+          secondary: "#FC79DF",
+
+          accent: "#74FF33",
+
+          neutral: "#FC79DF",
+
+          "base-100": "#ffffff",
+
+          info: "#6B78CB",
+
+          success: "#FC79DF",
+
+          warning: "#ffd932",
+
+          error: "#FFD932",
+        },
+      },
+    ],
   },
 };
 export default config;
