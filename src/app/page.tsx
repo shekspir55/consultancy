@@ -285,7 +285,7 @@ export default function Home() {
         <h2 className="text-5xl font-bold text-center m-5 text-primary ">
           Experienced Consultants{" "}
         </h2>
-        <div className="flex flex-col md:flex-row justify-around flex-wrap">
+        <div className="flex md:flex-row justify-around flex-wrap">
           {consultants
             .filter(({ years }) => years)
             .map((consultant) => (
@@ -344,7 +344,7 @@ export default function Home() {
                 team? Let us handle the technical details so you can focus on
                 what you do best.{" "}
               </p>
-              <LoveGuaranteed className="m-auto" size="150" />
+              <LoveGuaranteed className="m-auto" size="250" />
 
               <p className="p-3">
                 Love Guaranteed: Not satisfied after a month? Full refund, no
