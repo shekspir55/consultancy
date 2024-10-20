@@ -222,6 +222,7 @@ export default function Home() {
                     <li>Tech Leadership Mentoring</li>
                     <li>Server cost optimization</li>
                     <li>Cost cutting and team optimizations</li>
+                    <li>Embedding AI in the development lifecycle</li>
                   </ul>
                 </div>
               </div>
