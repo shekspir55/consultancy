@@ -2,7 +2,7 @@ import WhatWeDo from "./common/what-we-do";
 import Image from "next/image";
 import LoveGuaranteed from "./love-guaranteed";
 import Logo from "./logo";
-import StructuredData from './components/StructuredData';
+import StructuredData from "./components/StructuredData";
 
 // website url is https://powered-by.love/
 export default function Home() {
@@ -11,7 +11,7 @@ export default function Home() {
     "https://www.youtube.com/embed/djQ7b6BVkd4?si=PlrK9-XzJtQxAert",
     "https://www.youtube.com/embed/Vr5ou0poKGg?si=1PTdoR50_g1ZFGQA",
     "https://www.youtube.com/embed/0aXFpO5FWlA?si=zExIV5TSctExjdRT",
-    "https://www.youtube.com/embed/tm2g1EGnzGc?si=3s7H03bkSuDbNJ31",
+    // "https://www.youtube.com/embed/tm2g1EGnzGc?si=3s7H03bkSuDbNJ31",
   ];
 
   const consultants = [
@@ -36,7 +36,7 @@ export default function Home() {
       years: 18,
     },
     {
-      name: "Norayr Chilindaryan",
+      name: "Norayr Chilingaryan",
       image:
         "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpeople.aua.am%2Ffiles%2F2019%2F09%2F0R8A2838-e1568030053640.jpg&f=1&nofb=1&ipt=888a94e901f660829c50b0495f21b16243db1c4b7b2451616f5fa3e79bb7c5e1&ipo=images",
       title:
@@ -68,362 +68,370 @@ export default function Home() {
 
   return (
     <main>
-      <header className="hero bg-base-100 min-h-screen">
-        <div className="hero-content text-center">
-          <div className="container">
-            <Logo className="m-auto" size="140"/>
-            <h1 className="text-4xl mb-5">
-              <WhatWeDo />
-              Software Engineering Management Consultancy
-            </h1>
-            <a
-              className="btn btn-neutral m-10 md:btn-lg"
-              target="_blank"
-              href={link}
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
+      <div className="m-3">
+        <header className="hero bg-base-100 min-h-screen">
+          <div className="hero-content text-center">
+            <div className="container">
+              <Logo className="m-auto" size="140" />
+              <h1 className="text-4xl mb-5">
+                <WhatWeDo />
+                Software Engineering Management Consultancy
+              </h1>
+              <a
+                className="btn btn-neutral m-10 md:btn-lg"
+                target="_blank"
+                href={link}
               >
-                <path
-                  d="M3 9H21M7 3V5M17 3V5M6 12H10V16H6V12ZM6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
-                  stroke="#ffffff"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              Book Your Free Consultation
-            </a>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  className="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    d="M3 9H21M7 3V5M17 3V5M6 12H10V16H6V12ZM6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
+                    stroke="#ffffff"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+                Book Your Free Consultation
+              </a>
 
-            <div className="flex justify-center m-5">
-              <div className="rating rating-lg rating-half">
-                <input
-                  disabled
-                  type="radio"
-                  name="rating-10"
-                  className="rating-hidden"
-                />
-                <input
-                  disabled
-                  type="radio"
-                  name="rating-10"
-                  className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
-                />
-                <input
-                  disabled
-                  type="radio"
-                  name="rating-10"
-                  className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
-                />
-                <input
-                  disabled
-                  type="radio"
-                  name="rating-10"
-                  className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
-                  defaultChecked
-                />
-                <input
-                  disabled
-                  type="radio"
-                  name="rating-10"
-                  className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
-                  defaultChecked
-                />
-                <input
-                  disabled
-                  type="radio"
-                  name="rating-10"
-                  className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
-                  defaultChecked
-                />
-                <input
-                  disabled
-                  type="radio"
-                  name="rating-10"
-                  className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
-                  defaultChecked
-                />
-                <input
-                  disabled
-                  type="radio"
-                  name="rating-10"
-                  className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
-                  defaultChecked
-                />
-                <input
-                  disabled
-                  type="radio"
-                  name="rating-10"
-                  className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
-                  defaultChecked
-                />
-                <input
-                  disabled
-                  type="radio"
-                  name="rating-10"
-                  className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
-                  defaultChecked
-                />
+              <div className="flex justify-center m-5">
+                <div className="rating rating-lg rating-half">
+                  <input
+                    disabled
+                    type="radio"
+                    name="rating-10"
+                    className="rating-hidden"
+                  />
+                  <input
+                    disabled
+                    type="radio"
+                    name="rating-10"
+                    className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
+                  />
+                  <input
+                    disabled
+                    type="radio"
+                    name="rating-10"
+                    className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
+                  />
+                  <input
+                    disabled
+                    type="radio"
+                    name="rating-10"
+                    className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
+                    defaultChecked
+                  />
+                  <input
+                    disabled
+                    type="radio"
+                    name="rating-10"
+                    className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
+                    defaultChecked
+                  />
+                  <input
+                    disabled
+                    type="radio"
+                    name="rating-10"
+                    className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
+                    defaultChecked
+                  />
+                  <input
+                    disabled
+                    type="radio"
+                    name="rating-10"
+                    className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
+                    defaultChecked
+                  />
+                  <input
+                    disabled
+                    type="radio"
+                    name="rating-10"
+                    className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
+                    defaultChecked
+                  />
+                  <input
+                    disabled
+                    type="radio"
+                    name="rating-10"
+                    className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
+                    defaultChecked
+                  />
+                  <input
+                    disabled
+                    type="radio"
+                    name="rating-10"
+                    className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
+                    defaultChecked
+                  />
 
-                <input
-                  disabled
-                  type="radio"
-                  name="rating-10"
-                  className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
-                />
+                  <input
+                    disabled
+                    type="radio"
+                    name="rating-10"
+                    className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
+                  />
+                </div>
               </div>
+              <h4>
+                Anonymous client survey: 4.57/5 overall satisfaction rating.
+              </h4>
             </div>
-            <h4>
-              Anonymous client survey: 4.57/5 overall satisfaction rating.
-            </h4>
-          </div>
-          {/* <div className="avatar hidden md:flex">
+            {/* <div className="avatar hidden md:flex">
             <img
               src="/ruben.png"
               className="ring-primary ring-offset-base-100 w-24 rounded-full ring ring-offset-2"
             />
           </div> */}
-        </div>
-      </header>
-      <div className="divider"></div>
-      <div className="flex justify-center">
-        <div className="container">
-          <h2 className="text-5xl text-primary md:text-6xl font-bold mb-10 text-center">
-            Our Software Engineering Consulting Services
-          </h2>
-          <div className="flex flex-col lg:flex-row justify-around lg:space-x-5 space-x-0 space-y-5 lg:space-y-0 mb-5">
-            <div className="card bg-slate-50 text-primary-content w-30 shadow-xl">
-              <div className="card-body">
-                <h2 className="card-title">
-                  Startups: non technical and for technical founders
-                  <div className="badge badge-secondary">NEW</div>
-                </h2>
-                <ul className="list-decimal">
-                  <li>Fractional CTO services</li>
-                  <li>Technical Talent Acquisition</li>
-                  <li>Strategic Tech Planning</li>
-                  <li>Scaling your team efficiently</li>
-                  <li>Technical due diligence</li>
-                </ul>
-              </div>
-            </div>
-            <div className="card bg-slate-50 text-primary-content w-30 shadow-xl">
-              <div className="card-body">
-                <h2 className="card-title">
-                  Software development agencies and service providers
-                </h2>
-                <ul className="list-decimal">
-                  <li>Technical Team performance optimization</li>
-                  <li>Tech Leadership Mentoring</li>
-                  <li>Server cost optimization</li>
-                  <li>Cost cutting and team optimizations</li>
-                </ul>
-              </div>
-            </div>
-            <div className="card bg-slate-50 text-primary-content w-30 shadow-xl">
-              <div className="card-body">
-                <h2 className="card-title">Non technical companies</h2>
-                <ul className="list-decimal">
-                  <li>Software proposition and consultancy</li>
-                  <li>Open-source alternatives for proprietary software</li>
-                  <li>
-                    Basic networking and security services / VPN and backup
-                    systems
-                  </li>
-                  <li>Infrastructure setup</li>
-                  <li>Build operate transfer models</li>
-                </ul>
-              </div>
-            </div>
           </div>
-          <a
-            className="btn btn-block btn-lg btn-primary"
-            target="_blank"
-            href={link}
-          >
-            Let's meet and explore your needs
-          </a>
-        </div>
-      </div>
-      <div className="divider"></div>
-      <div>
-        <div>
-          <div className="flex justify-center text-center">
-            <div className="container">
-              <div className=" flex  flex-col items-center">
-                <h2 className="text-4xl lg:text-6xl font-bold m-5 text-primary ">
-                  Cases
-                </h2>
-                <a href="https://solicy.net/" target="_blank" className="m-10">
-                  <Image
-                    src="/logos/solicy.png"
-                    width={200}
-                    height={300}
-                    alt="Solicy logo"
-                  />
-                </a>
-              </div>
-              <div>
-                <h2 className="text-4xl lg:text-6xl font-bold m-5 text-primary ">
-                  Journey
-                </h2>
-                <Image
-                  src="/logos/our-journey.png"
-                  width={3000}
-                  height={300}
-                  alt="Our journey logo"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="divider"></div>
-      <div className=" container m-auto flex flex-col justify-center">
-        <h2 className="text-5xl font-bold text-center m-5 text-primary ">
-          Experienced Consultants{" "}
-        </h2>
-        <div className="flex md:flex-row justify-around flex-wrap">
-          {consultants
-            .filter(({ years }) => years)
-            .map((consultant) => (
-              <div className="card bg-slate-50 w-60 shadow-xl m-5">
-                <figure>
-                  <img
-                    src={consultant.image}
-                    alt={consultant.name + " image"}
-                    className="grayscale object-cover h-60 w-60"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title uppercase">
-                    {consultant.name.split(" ").map((n) => (
-                      <>
-                        {n}
-                        <br />
-                      </>
-                    ))}
-                  </h2>
-                  <b>{consultant.years} Years</b>
-                  <p className="capitalize">{consultant.title}</p>
-                </div>
-              </div>
-            ))}
-        </div>
-      </div>
-      <div className="divider"></div>
-      <div className="bg-base-100">
-        <div className="max-w-lg mx-auto">
-          <div className="container flex flex-col space-y-5">
-            <h2 className="text-3xl font-bold text-center text-primary ">
-              The "No Problem" Challenge:
+        </header>
+        <div className="divider"></div>
+        <div className="flex justify-center">
+          <div className="container">
+            <h2 className="text-5xl text-primary md:text-6xl font-bold mb-10 text-center">
+              Our Software Engineering Consulting Services
             </h2>
-            <div className="alert p-5 text-left">
-              <span>
-                <h1 className="text-xl font-bold text-center p-2"></h1>
-                <div className="font-bold">
-                  You claim you don't have issues? Let's put that to the test.
+            <div className="flex flex-col lg:flex-row justify-around lg:space-x-5 space-x-0 space-y-5 lg:space-y-0 mb-5">
+              <div className="card bg-slate-50 text-primary-content w-30 shadow-xl">
+                <div className="card-body">
+                  <h2 className="card-title">
+                    Startups: non technical and for technical founders
+                    <div className="badge badge-secondary">NEW</div>
+                  </h2>
+                  <ul className="list-decimal">
+                    <li>Fractional CTO services</li>
+                    <li>Technical Talent Acquisition</li>
+                    <li>Strategic Tech Planning</li>
+                    <li>Scaling your team efficiently</li>
+                    <li>Technical due diligence</li>
+                  </ul>
                 </div>
-                <ul className="list-decimal p-5">
-                  <li>We'll assess your software processes.</li>
-                  <li>If we find issues you agree with, you hire us.</li>
-                  <li>If not, we walk away.</li>
-                </ul>
-                <br />
-                <div>No risk, potential high reward.</div>
-              </span>
+              </div>
+              <div className="card bg-slate-50 text-primary-content w-30 shadow-xl">
+                <div className="card-body">
+                  <h2 className="card-title">
+                    Software development agencies and service providers
+                  </h2>
+                  <ul className="list-decimal">
+                    <li>Technical Team performance optimization</li>
+                    <li>Tech Leadership Mentoring</li>
+                    <li>Server cost optimization</li>
+                    <li>Cost cutting and team optimizations</li>
+                  </ul>
+                </div>
+              </div>
+              <div className="card bg-slate-50 text-primary-content w-30 shadow-xl">
+                <div className="card-body">
+                  <h2 className="card-title">Non technical companies</h2>
+                  <ul className="list-decimal">
+                    <li>Software proposition and consultancy</li>
+                    <li>Open-source alternatives for proprietary software</li>
+                    <li>
+                      Basic networking and security services / VPN and backup
+                      systems
+                    </li>
+                    <li>Infrastructure setup</li>
+                    <li>Build operate transfer models</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            <a target="_blank" href={link} className="btn btn-primary">
-              Prove Us Wrong
+            <a
+              className="btn btn-block btn-lg btn-primary"
+              target="_blank"
+              href={link}
+            >
+              Let's meet and explore your needs
             </a>
-            <div className="">
-              <p className="p-3">
+          </div>
+        </div>
+        <div className="divider"></div>
+        <div>
+          <div>
+            <div className="flex justify-center text-center">
+              <div className="container">
+                <div className=" flex  flex-col items-center">
+                  <h2 className="text-4xl lg:text-6xl font-bold m-5 text-primary ">
+                    Cases
+                  </h2>
+                  <a
+                    href="https://solicy.net/"
+                    target="_blank"
+                    className="m-10"
+                  >
+                    <Image
+                      src="/logos/solicy.png"
+                      width={200}
+                      height={300}
+                      alt="Solicy logo"
+                    />
+                  </a>
+                </div>
+                <div>
+                  <h2 className="text-4xl lg:text-6xl font-bold m-5 text-primary ">
+                    Journey
+                  </h2>
+                  <Image
+                    src="/logos/our-journey.png"
+                    width={3000}
+                    height={300}
+                    alt="Our journey logo"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="divider"></div>
+        <div className=" container m-auto flex flex-col justify-center">
+          <h2 className="text-5xl font-bold text-center m-5 text-primary ">
+            Experienced Consultants
+          </h2>
+          <div className="flex md:flex-row justify-around flex-wrap">
+            {consultants
+              .filter(({ years }) => years)
+              .map((consultant) => (
+                <div className="card bg-slate-50 w-60 shadow-xl mt-5 m-1">
+                  <figure>
+                    <img
+                      src={consultant.image}
+                      alt={consultant.name + " image"}
+                      className="grayscale object-cover h-60 w-60"
+                    />
+                  </figure>
+                  <div className="card-body">
+                    <h2 className="card-title uppercase">
+                      {consultant.name.split(" ").map((n) => (
+                        <>
+                          {n}
+                          <br />
+                        </>
+                      ))}
+                    </h2>
+                    <b>{consultant.years} Years</b>
+                    <p className="capitalize">{consultant.title}</p>
+                  </div>
+                </div>
+              ))}
+          </div>
+        </div>
+        <div className="divider"></div>
+        <div className="bg-base-100 flex justify-center">
+          <div className="container">
+            <div className="space-y-5">
+              <h2 className="text-3xl font-bold text-center text-primary ">
+                The "No Problem" Challenge:
+              </h2>
+              <div className="alert text-left">
+                <span>
+                  <h1 className="text-xl font-bold text-center p-2"></h1>
+                  <div className="font-bold">
+                    You claim you don't have issues? Let's put that to the test.
+                  </div>
+                  <ul className="list-decimal p-5">
+                    <li>We'll assess your software processes.</li>
+                    <li>If we find issues you agree with, you hire us.</li>
+                    <li>If not, we walk away.</li>
+                  </ul>
+                  <br />
+                  <div>Potential high reward.</div>
+                </span>
+              </div>
+              <a
+                target="_blank"
+                href={link}
+                className="btn btn-secondary w-full"
+              >
+                Prove Us Wrong
+              </a>
+              <p>
                 Juggling stakeholders and sales while managing your engineering
                 team? Let us handle the technical details so you can focus on
                 what you do best.{" "}
               </p>
               <LoveGuaranteed className="m-auto" size="250" />
-
-              <p className="p-3">
+              <p>
                 Love Guaranteed: Not satisfied after a month? Full refund, no
                 questions asked. We are that confident.
               </p>
             </div>
           </div>
         </div>
-      </div>
-      <div className="divider"></div>
-      <div className="flex justify-center">
-        <div className="flex flex-col">
-          <h2 className="text-4xl font-bold p-5 block text-center text-primary ">
-            Podcasts
-          </h2>
-          <div className="flex justify-center">
-            <a
-              className="btn btn-primary m-5"
-              href="https://t.me/poweredCommunity"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Join Our Software Engineering Telegram Community
-            </a>
-          </div>
-          <div className="flex flex-col gap-y-5">
-            {podcastURLs.map((podcastURL) => (
-              <iframe
-                key={podcastURL}
-                width="320"
-                height="150"
-                src={podcastURL}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
-            ))}
+        <div className="divider"></div>
+        <div className="flex justify-center">
+          <div className="flex flex-col">
+            <h2 className="text-4xl font-bold block text-center text-primary ">
+              Podcasts
+            </h2>
+            <div className="flex justify-center">
+              <a
+                className="btn btn-primary m-5"
+                href="https://t.me/poweredCommunity"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Join Our Software Engineering Telegram Community
+              </a>
+            </div>
+            <div className="flex flex-wrap justify-center">
+              {podcastURLs.map((podcastURL) => (
+                <iframe
+                  key={podcastURL}
+                  width="320"
+                  height="150"
+                  src={podcastURL}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                  className="m-2"
+                ></iframe>
+              ))}
+            </div>
           </div>
         </div>
-      </div>
-      <div className="divider"></div>
-      <div className=" p-10">
-        <div className="flex justify-center">
-          <div className="max-w-lg">
-            <div className="flex justify-center">
-              <div className="card w-100 shadow-xl">
-                <div className="card-body">
-                  <h2 className="card-title">Not sure yet?</h2>
-                  <p>Schedule a free call or chat with us.</p>
-                  <div className="card-actions justify-end">
-                    <a className="btn btn-primary" href={link}>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        className="h-6 w-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
+        <div className="divider"></div>
+        <div className="mt-5 mb-5">
+          <div className="flex justify-center">
+            <div className="max-w-lg">
+              <div className="flex justify-center">
+                <div className="card w-100 shadow-xl">
+                  <div className="card-body">
+                    <h2 className="card-title">Not sure yet?</h2>
+                    <p>Schedule a free call or chat with us.</p>
+                    <div className="card-actions justify-end">
+                      <a className="btn btn-primary" href={link}>
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          className="h-6 w-6"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            d="M3 9H21M7 3V5M17 3V5M6 12H10V16H6V12ZM6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        Let's meet
+                      </a>
+                      <a
+                        className="btn btn-primary"
+                        target="_blank"
+                        href="https://www.linkedin.com/in/ruben-kh/"
                       >
-                        <path
-                          d="M3 9H21M7 3V5M17 3V5M6 12H10V16H6V12ZM6.2 21H17.8C18.9201 21 19.4802 21 19.908 20.782C20.2843 20.5903 20.5903 20.2843 20.782 19.908C21 19.4802 21 18.9201 21 17.8V8.2C21 7.07989 21 6.51984 20.782 6.09202C20.5903 5.71569 20.2843 5.40973 19.908 5.21799C19.4802 5 18.9201 5 17.8 5H6.2C5.0799 5 4.51984 5 4.09202 5.21799C3.71569 5.40973 3.40973 5.71569 3.21799 6.09202C3 6.51984 3 7.07989 3 8.2V17.8C3 18.9201 3 19.4802 3.21799 19.908C3.40973 20.2843 3.71569 20.5903 4.09202 20.782C4.51984 21 5.07989 21 6.2 21Z"
-                          stroke="#000000"
-                          stroke-width="2"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                        />
-                      </svg>
-                      Book Free Consultation
-                    </a>
-                    <a
-                      className="btn btn-primary"
-                      target="_blank"
-                      href={link}
-                    >
-                      Connect with via linkedin
-                    </a>
+                        Connect on linkedin
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
