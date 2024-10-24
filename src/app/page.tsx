@@ -376,7 +376,7 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Join Our Software Engineering Telegram Community
+                Join Our Telegram Community
               </a>
             </div>
             <div className="flex flex-wrap justify-center">
