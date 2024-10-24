@@ -11,7 +11,7 @@ export default function Home() {
     "https://www.youtube.com/embed/djQ7b6BVkd4?si=PlrK9-XzJtQxAert",
     "https://www.youtube.com/embed/Vr5ou0poKGg?si=1PTdoR50_g1ZFGQA",
     "https://www.youtube.com/embed/0aXFpO5FWlA?si=zExIV5TSctExjdRT",
-    // "https://www.youtube.com/embed/tm2g1EGnzGc?si=3s7H03bkSuDbNJ31",
+    "https://www.youtube.com/embed/tm2g1EGnzGc?si=3s7H03bkSuDbNJ31",
   ];
 
   const consultants = [
@@ -78,7 +78,7 @@ export default function Home() {
                 Software Engineering Management Consultancy
               </h1>
               <a
-                className="btn btn-neutral m-10 md:btn-lg"
+                className="btn btn-neutral mt-10 mb-10 md:btn-lg"
                 target="_blank"
                 href={link}
               >
