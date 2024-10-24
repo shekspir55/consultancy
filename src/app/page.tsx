@@ -376,6 +376,12 @@ export default function Home() {
                 target="_blank"
                 rel="noopener noreferrer"
               >
+                <img
+                className="rounded-full"
+                  src="https://cdn4.cdn-telegram.org/file/hrZo7e1juop7H8EdqftbpSWTOc8i89_Tx6shDnLbuRI-YOdYBR0Cb6p1CuMChQPHI74FDQZSbuq7poUcmK87q3s0CpjL62AcNUuXtBisi3bnB4t0pNXAg4UbvSR0pWQFslFsKvL0c1ltIfRmAfaUnCeCEzzSrY2qorGz4_yp5rmaQ2fy05dVQMWndR3e9sXD9Ypzw4HgXUD2CO1b9n_9SayE3VsjOIjN70WcLyqnLG-ItUhoyoLLDpmwEr7MsKq7NHRIacSx_xK4dU6UUbxtNb-aBy8dvcnreedH2yderapXfBwXyLCJ1UdJdvFGFbN0ZfniUM-eLZ1C48wkxsIOLw.jpg"
+                  width={30}
+                  alt=""
+                />
                 Join Our Telegram Community
               </a>
             </div>
