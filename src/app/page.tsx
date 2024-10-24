@@ -13,7 +13,7 @@ export default function Home() {
     "https://www.youtube.com/embed/Vr5ou0poKGg?si=1PTdoR50_g1ZFGQA",
     "https://www.youtube.com/embed/0aXFpO5FWlA?si=zExIV5TSctExjdRT",
     "https://www.youtube.com/embed/tm2g1EGnzGc?si=3s7H03bkSuDbNJ31",
-    "https://www.youtube.com/embed/b2sAdA_mrXU?si=2bccVoHkTMc77H__"
+    "https://www.youtube.com/embed/b2sAdA_mrXU?si=2bccVoHkTMc77H__",
   ];
 
   const consultants = [
@@ -379,7 +379,7 @@ export default function Home() {
                 rel="noopener noreferrer"
               >
                 <img
-                className="rounded-full"
+                  className="rounded-full"
                   src="https://cdn4.cdn-telegram.org/file/hrZo7e1juop7H8EdqftbpSWTOc8i89_Tx6shDnLbuRI-YOdYBR0Cb6p1CuMChQPHI74FDQZSbuq7poUcmK87q3s0CpjL62AcNUuXtBisi3bnB4t0pNXAg4UbvSR0pWQFslFsKvL0c1ltIfRmAfaUnCeCEzzSrY2qorGz4_yp5rmaQ2fy05dVQMWndR3e9sXD9Ypzw4HgXUD2CO1b9n_9SayE3VsjOIjN70WcLyqnLG-ItUhoyoLLDpmwEr7MsKq7NHRIacSx_xK4dU6UUbxtNb-aBy8dvcnreedH2yderapXfBwXyLCJ1UdJdvFGFbN0ZfniUM-eLZ1C48wkxsIOLw.jpg"
                   width={30}
                   alt=""
@@ -387,20 +387,23 @@ export default function Home() {
                 Join Our Telegram Community
               </a>
             </div>
-            <div className="flex flex-wrap justify-center">
-              {podcastURLs.map((podcastURL) => (
-                <iframe
-                  key={podcastURL}
-                  width="320"
-                  height="150"
-                  src={podcastURL}
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  className="m-2"
-                ></iframe>
+            <div className="flex flex-wrap justify-center container">
+              {podcastURLs.map((podcastURL, index) => (
+                <div>
+                  <h4 className="text-2xl">Podcast {index}</h4>
+                  <iframe
+                    key={podcastURL}
+                    width="320"
+                    height="150"
+                    src={podcastURL}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                    className="m-2"
+                  ></iframe>
+                </div>
               ))}
             </div>
           </div>
