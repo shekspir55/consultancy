@@ -103,86 +103,21 @@ export default function Home() {
               </a>
 
               <div className="flex justify-center m-5">
-                <div className="rating rating-lg rating-half">
-                  <input
-                    disabled
-                    type="radio"
-                    name="rating-10"
-                    className="rating-hidden"
-                  />
-                  <input
-                    disabled
-                    type="radio"
-                    name="rating-10"
-                    className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
-                  />
-                  <input
-                    disabled
-                    type="radio"
-                    name="rating-10"
-                    className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
-                  />
-                  <input
-                    disabled
-                    type="radio"
-                    name="rating-10"
-                    className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
-                    defaultChecked
-                  />
-                  <input
-                    disabled
-                    type="radio"
-                    name="rating-10"
-                    className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
-                    defaultChecked
-                  />
-                  <input
-                    disabled
-                    type="radio"
-                    name="rating-10"
-                    className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
-                    defaultChecked
-                  />
-                  <input
-                    disabled
-                    type="radio"
-                    name="rating-10"
-                    className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
-                    defaultChecked
-                  />
-                  <input
-                    disabled
-                    type="radio"
-                    name="rating-10"
-                    className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
-                    defaultChecked
-                  />
-                  <input
-                    disabled
-                    type="radio"
-                    name="rating-10"
-                    className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
-                    defaultChecked
-                  />
-                  <input
-                    disabled
-                    type="radio"
-                    name="rating-10"
-                    className="mask mask-star-2 mask-half-1 bg-[#FFD932]"
-                    defaultChecked
-                  />
-
-                  <input
-                    disabled
-                    type="radio"
-                    name="rating-10"
-                    className="mask mask-star-2 mask-half-2 bg-[#FFD932]"
-                  />
-                </div>
+                <script
+                  type="text/javascript"
+                  src="https://widget.clutch.co/static/js/widget.js"
+                ></script>{" "}
+                <div
+                  className="clutch-widget w-[215px]"
+                  data-url="https://widget.clutch.co"
+                  data-widget-type="14"
+                  data-height="50"
+                  data-nofollow="true"
+                  data-expandifr="true"
+                  data-scale="100"
+                  data-clutchcompany-id="2439017"
+                ></div>
               </div>
-              <h4>
-                Anonymous client survey: 4.57/5 overall satisfaction rating.
-              </h4>
             </div>
             {/* <div className="avatar hidden md:flex">
             <img
