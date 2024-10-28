@@ -32,6 +32,13 @@ export default function Home() {
       title: "Project Management, documentation consultant",
     },
     {
+      name: "Andranik Khandanyan",
+      image:
+        "https://media.licdn.com/dms/image/v2/C5603AQHpHiTZEKB7-w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517594579554?e=1735776000&v=beta&t=Th49ZyBfbM_lTe1P4XzhH37UgI8_pDhxWVF22Nf6BbM",
+      title: "Software architecture, System performance, Backend consultant",
+      years: 12,
+    },
+    {
       name: "Andranik Muradyan",
       image: "./andranik.png",
       title: "TDD, Functional programming consultant",
@@ -242,7 +249,7 @@ export default function Home() {
                       className="grayscale object-cover h-60 w-60"
                     />
                   </figure>
-                  <div className="card-body">
+                  <div className="card-body p-5">
                     <h2 className="card-title uppercase">
                       {consultant.name.split(" ").map((n) => (
                         <>
@@ -251,7 +258,7 @@ export default function Home() {
                         </>
                       ))}
                     </h2>
-                    <b>{consultant.years} Years</b>
+                    <b>{consultant.years} Years of Experience</b>
                     <p className="capitalize">{consultant.title}</p>
                   </div>
                 </div>
@@ -262,10 +269,10 @@ export default function Home() {
         <div className="bg-base-100 flex justify-center">
           <div className="container">
             <div className="space-y-5">
-              <h2 className="text-3xl font-bold text-center text-primary ">
+              <h2 className="text-4xl font-bold text-center text-primary ">
                 The "No Problem" Challenge:
               </h2>
-              <div className="alert text-left">
+              <div className="text-left">
                 <span>
                   <h1 className="text-xl font-bold text-center p-2"></h1>
                   <div className="font-bold">
@@ -277,7 +284,6 @@ export default function Home() {
                     <li>If not, we walk away.</li>
                   </ul>
                   <br />
-                  <div>Potential high reward.</div>
                 </span>
               </div>
               <a
@@ -287,6 +293,17 @@ export default function Home() {
               >
                 Prove Us Wrong
               </a>
+            </div>
+          </div>
+        </div>
+
+        <div className="divider"></div>
+        <div className="bg-base-100 flex justify-center">
+          <div className="container">
+            <div className="space-y-5">
+              <h1 className="text-4xl font-bold text-center text-primary ">
+                Our Commitment
+              </h1>
               <p>
                 Juggling stakeholders and sales while managing your engineering
                 team? Let us handle the technical details so you can focus on
@@ -349,7 +366,7 @@ export default function Home() {
             <div className="max-w-lg">
               <div className="flex justify-center">
                 <div className="card w-100 shadow-xl">
-                  <div className="card-body">
+                  <div className="card-body ">
                     <h2 className="card-title">Not sure yet?</h2>
                     <p>Schedule a free call or chat with us.</p>
                     <div className="card-actions justify-end">
