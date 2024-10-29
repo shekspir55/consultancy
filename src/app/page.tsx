@@ -265,7 +265,7 @@ export default function Home() {
               ))}
           </div>
         </div>
-        <div className="divider"></div>
+        {/* <div className="divider"></div>
         <div className="bg-base-100 flex justify-center">
           <div className="container">
             <div className="space-y-5">
@@ -295,7 +295,7 @@ export default function Home() {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="divider"></div>
         <div className="bg-base-100 flex justify-center">
