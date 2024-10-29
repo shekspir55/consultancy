@@ -20,7 +20,7 @@ export default function Home() {
     {
       name: "Ruben Khachatryan",
       image:
-        "https://media.licdn.com/dms/image/v2/D4D03AQF0UJ2KGopx_A/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1715796401926?e=1734566400&v=beta&t=6ODPs24ndBO21Tg6mlU6wpTMD5fHFDONOjOGLHPzxMk",
+        "https://media.licdn.com/dms/image/v2/D4D03AQHarAA1SUEqbw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730207922417?e=1735776000&v=beta&t=2297EcP6pzPB7ei2Ws2UlaSxAEVZDs45f4hbfQLXMSE",
       title:
         "Engineering Management, Containerization, Documentation consultant",
       years: 12,
