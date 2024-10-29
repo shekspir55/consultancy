@@ -58,19 +58,19 @@ export default function Home() {
       title: "Android, IOS, native mobile consultant",
       years: 10,
     },
-    {
-      name: "Davit Mkrtychyan",
-      image:
-        "https://media.licdn.com/dms/image/v2/C4D03AQHwZEIzpEPAfg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1616346735550?e=1734566400&v=beta&t=zwIQ1H667UWuNfKVxtASZk2rIHi0YN5oeM6uXlRhZwI",
-      title: "Web editor, Video editor, Web image editor consultant",
-      years: 5,
-    },
-    {
-      name: "Artyom Sukiasyan",
-      image:
-        "https://media.licdn.com/dms/image/v2/C4E03AQFT-28GAZ6vMQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1635353559312?e=1734566400&v=beta&t=KrFFGuXImS4KKE2TqNC7hLaTt76mdOmQRRSKDd_xYt0",
-      title: "Code review consultant",
-    },
+    // {
+    //   name: "Davit Mkrtychyan",
+    //   image:
+    //     "https://media.licdn.com/dms/image/v2/C4D03AQHwZEIzpEPAfg/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1616346735550?e=1734566400&v=beta&t=zwIQ1H667UWuNfKVxtASZk2rIHi0YN5oeM6uXlRhZwI",
+    //   title: "Web editor, Video editor, Web image editor consultant",
+    //   years: 5,
+    // },
+    // {
+    //   name: "Artyom Sukiasyan",
+    //   image:
+    //     "https://media.licdn.com/dms/image/v2/C4E03AQFT-28GAZ6vMQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1635353559312?e=1734566400&v=beta&t=KrFFGuXImS4KKE2TqNC7hLaTt76mdOmQRRSKDd_xYt0",
+    //   title: "Code review consultant",
+    // },
   ];
 
   const link = "https://cal.com/ruben-pbl/";
