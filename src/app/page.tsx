@@ -20,9 +20,9 @@ export default function Home() {
     {
       name: "Ruben Khachatryan",
       image:
-        "https://media.licdn.com/dms/image/v2/D4D03AQHarAA1SUEqbw/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1730207922417?e=1735776000&v=beta&t=2297EcP6pzPB7ei2Ws2UlaSxAEVZDs45f4hbfQLXMSE",
+        "./ruben.png",
       title:
-        "Engineering Management, Containerization, Documentation consultant",
+        "Engineering Management, Soft Skills, Containerization, Documentation consultant",
       years: 12,
     },
     {
@@ -34,28 +34,28 @@ export default function Home() {
     {
       name: "Andranik Khandanyan",
       image:
-        "https://media.licdn.com/dms/image/v2/C5603AQHpHiTZEKB7-w/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1517594579554?e=1735776000&v=beta&t=Th49ZyBfbM_lTe1P4XzhH37UgI8_pDhxWVF22Nf6BbM",
-      title: "Software architecture, System performance, Backend consultant",
+        "./andranik-k.png",
+      title: "Engineering management, Software architecture, System performance, Backend consultant",
       years: 12,
     },
     {
       name: "Andranik Muradyan",
       image: "./andranik.png",
-      title: "TDD, Functional programming consultant",
+      title: "Distributed systems, Complex system design, TDD, Functional programming consultant",
       years: 18,
     },
     {
       name: "Norayr Chilingaryan",
       image:
-        "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fpeople.aua.am%2Ffiles%2F2019%2F09%2F0R8A2838-e1568030053640.jpg&f=1&nofb=1&ipt=888a94e901f660829c50b0495f21b16243db1c4b7b2451616f5fa3e79bb7c5e1&ipo=images",
+        "./norayr.png",
       title:
         "Embedded systems, DevOPS, Linnux, Infarstructure, Open source consultant",
       years: 28,
     },
     {
       name: "Karen Navasardyan",
-      image: "karen.jpg",
-      title: "Android, IOS, native mobile consultant",
+      image: "karen.png",
+      title: "Android, IOS, Native mobile architecture consultant",
       years: 10,
     },
     // {
