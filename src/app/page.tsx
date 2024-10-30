@@ -19,8 +19,7 @@ export default function Home() {
   const consultants = [
     {
       name: "Ruben Khachatryan",
-      image:
-        "./ruben.png",
+      image: "/avatars/ruben.png",
       title:
         "Engineering Management, Soft Skills, Containerization, Documentation consultant",
       years: 12,
@@ -33,28 +32,28 @@ export default function Home() {
     },
     {
       name: "Andranik Khandanyan",
-      image:
-        "./andranik-k.png",
-      title: "Engineering management, Software architecture, System performance, Backend consultant",
+      image: "/avatars/andranik-k.png",
+      title:
+        "Engineering management, Software architecture, System performance, Backend consultant",
       years: 12,
     },
     {
       name: "Andranik Muradyan",
-      image: "./andranik.png",
-      title: "Distributed systems, Complex system design, TDD, Functional programming consultant",
+      image: "/avatars/andranik.png",
+      title:
+        "Distributed systems, Complex system design, TDD, Functional programming consultant",
       years: 18,
     },
     {
       name: "Norayr Chilingaryan",
-      image:
-        "./norayr.png",
+      image: "/avatars/norayr.png",
       title:
         "Embedded systems, DevOPS, Linnux, Infarstructure, Open source consultant",
       years: 28,
     },
     {
       name: "Karen Navasardyan",
-      image: "karen.png",
+      image: "/avatars/karen.png",
       title: "Android, IOS, Native mobile architecture consultant",
       years: 10,
     },
@@ -243,8 +242,10 @@ export default function Home() {
               .map((consultant) => (
                 <div className="card bg-slate-50 w-60 shadow-xl mt-5 m-1">
                   <figure>
-                    <img
+                    <Image
                       src={consultant.image}
+                      width={500}
+                      height={500}
                       alt={consultant.name + " image"}
                       className="grayscale object-cover h-60 w-60"
                     />
