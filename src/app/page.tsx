@@ -205,7 +205,7 @@ export default function Home() {
                     Cases
                   </h2>
                   <a
-                    href="https://solicy.net/"
+                    href="https://solicy.net/?utm_source=partnerwebsite&utm_medium=PBLConsultancy"
                     target="_blank"
                     className="m-10"
                   >
