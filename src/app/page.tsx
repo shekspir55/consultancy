@@ -2,6 +2,7 @@ import WhatWeDo from "./common/what-we-do";
 import Image from "next/image";
 import LoveGuaranteed from "./love-guaranteed";
 import Logo from "./logo";
+import Quiz from "./quiz";
 import StructuredData from "./components/StructuredData";
 
 // website url is https://powered-by.love/
@@ -362,6 +363,11 @@ export default function Home() {
                 </div>
               ))}
             </div>
+          </div>
+        </div><div className="divider"></div>
+        <div className="flex justify-center" id="quiz">
+          <div className="flex flex-col">
+            <Quiz/>
           </div>
         </div>
         <div className="divider"></div>
