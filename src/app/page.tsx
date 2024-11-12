@@ -16,6 +16,7 @@ export default function Home() {
     "https://www.youtube.com/embed/b2sAdA_mrXU?si=2bccVoHkTMc77H__",
     "https://www.youtube.com/embed/5tZUVczuvAY?si=VP8RFnq0bd5hY8II",
     "https://www.youtube.com/embed/iy-Eb3KO1kY?si=IskIHKcXCsRmUZtC",
+    "https://www.youtube.com/embed/zMEOVp52Rww?si=bdVp086jqiRO_vRq",
   ];
 
   const consultants = [
