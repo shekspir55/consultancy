@@ -13,7 +13,7 @@ export default function Quiz() {
   const [outcome, setOutcome] = useState({});
   const [formSubmitted, setFormSubmitted] = useState(false);
 
-  const quizTitle = "PBL Company Assesment Quiz";
+  const quizTitle = "PBL Company Assessment Quiz";
   const toastMessage = "Please select at least one option before proceeding.";
   const logoUrl =
     "https://media.licdn.com/dms/image/v2/D4D0BAQF96mDjWzlQHQ/company-logo_100_100/company-logo_100_100/0/1729589831846/poweredby_love_logo?e=1739404800&v=beta&t=DaEEwGAAY-kGOtUtM21r0f7dLnDMN97YJN45c0UZ8TE";
@@ -123,7 +123,7 @@ export default function Quiz() {
     },
     {
       question:
-        "How many people in your team understand enough of the system to keep it running if others suddenly leave?",
+        "How many people can maintain your system if key team members leave?",
       options: [
         { text: "More than 3 people per component", id: "highPerforming" },
         { text: "2-3 people per component", id: "goodWithGaps" },
@@ -348,10 +348,10 @@ export default function Quiz() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center mt-20 mb-20 max-w-4xl">
+    <div className="flex flex-col justify-center">
       {isToastVisible && (
         <div
-          className="toast toast-bottom toast-end z-50 cursor-pointer"
+          className="toast toast-bottom toast-end z-50 cursor-pointer p-0 md:p-3"
           onClick={() => setIsToastVisible(false)}
         >
           <div className="alert alert-success">
@@ -359,7 +359,7 @@ export default function Quiz() {
           </div>
         </div>
       )}
-      <div className="card w-full  bg-base-100 shadow-xl">
+      <div className="card bg-base-100 shadow-xl m-3">
         <div className="card-body">
           <header className="flex items-center justify-between mb-6">
             <div className="avatar">
@@ -368,7 +368,7 @@ export default function Quiz() {
               </div>
             </div>
             <h1 className="card-title text-3xl font-bold text-center flex-grow pl-5">
-              {quizTitle}
+              {quizTitle} ({currentQuestion+1}/{totalQuestions})
             </h1>
           </header>
           <progress
@@ -400,18 +400,17 @@ export default function Quiz() {
                       />
                     ) : (
                       <>
-                       <input
-                        type="checkbox"
-                        className="checkbox checkbox-primary"
-                        checked={selectedAnswers[currentQuestion]
-                          ?.map(({ text }) => text)
-                          ?.includes(option.text)}
-                        onChange={() =>
-                          handleCheckboxChange(currentQuestion, option)
-                        }
-                      />
+                        <input
+                          type="checkbox"
+                          className="checkbox checkbox-primary"
+                          checked={selectedAnswers[currentQuestion]
+                            ?.map(({ text }) => text)
+                            ?.includes(option.text)}
+                          onChange={() =>
+                            handleCheckboxChange(currentQuestion, option)
+                          }
+                        />
                       </>
-                     
                     )}
                     <span>{option.text}</span>
                   </label>

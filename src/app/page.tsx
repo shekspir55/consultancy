@@ -80,7 +80,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="m-3">
+      <div className="">
         <header className="hero bg-base-100 min-h-screen">
           <div className="hero-content text-center">
             <div className="container">
@@ -138,7 +138,7 @@ export default function Home() {
           </div>
         </header>
         <div className="divider"></div>
-        <div className="flex justify-center">
+        <div className="flex justify-center m-3">
           <div className="container">
             <h2 className="text-5xl text-primary md:text-6xl font-bold mb-10 text-center">
               Our Software Engineering Consulting Services
@@ -303,7 +303,7 @@ export default function Home() {
         </div> */}
 
         <div className="divider"></div>
-        <div className="bg-base-100 flex justify-center">
+        <div className="bg-base-100 flex justify-center m-3">
           <div className="container">
             <div className="space-y-5">
               <h1 className="text-4xl font-bold text-center text-primary ">
@@ -364,11 +364,10 @@ export default function Home() {
               ))}
             </div>
           </div>
-        </div><div className="divider"></div>
-        <div className="flex justify-center" id="quiz">
-          <div className="flex flex-col">
-            <Quiz/>
-          </div>
+        </div>
+        <div className="divider"></div>
+        <div className="flex justify-center align-middle bg-primary min-h-screen" id="quiz">
+          <Quiz />
         </div>
         <div className="divider"></div>
         <div className="mt-5 mb-5">
