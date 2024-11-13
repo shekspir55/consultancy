@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { Check, ChevronLeft, ChevronRight, Mail, XCircle } from "lucide-react";
+import Logo from "./logo";
 
 export default function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -188,20 +189,6 @@ export default function Quiz() {
       type: "multiple",
     },
     {
-      question:
-        "How many people understand enough of the system to keep it running if others leave?",
-      options: [
-        { text: "More than 3 people per component", id: "highPerforming" },
-        { text: "2-3 people per component", id: "goodWithGaps" },
-        { text: "Usually just 1 person per component", id: "needsAttention" },
-        {
-          text: "Critical parts depend on specific individuals",
-          id: "needsSignificantHelp",
-        },
-      ],
-      type: "single",
-    },
-    {
       question: "How do you track team productivity?",
       options: [
         { text: "Clear metrics and regular reviews", id: "highPerforming" },
@@ -364,11 +351,11 @@ export default function Quiz() {
           <header className="flex items-center justify-between mb-6">
             <div className="avatar">
               <div className="w-16 rounded-full ring ring-primary ring-offset-2">
-                <img src={logoUrl} alt="Logo" />
+                <Logo size="60" className="m-auto"/>
               </div>
             </div>
             <h1 className="card-title text-3xl font-bold text-center flex-grow pl-5">
-              {quizTitle} ({currentQuestion+1}/{totalQuestions})
+              {quizTitle} ({currentQuestion + 1}/{totalQuestions})
             </h1>
           </header>
           <progress
@@ -454,8 +441,8 @@ export default function Quiz() {
             </form>
           ) : (
             <h1 className="text-2xl">
-              <Check className="inline text-success" size={60} /> The quiz has
-              been submitted, we will contact you soon.
+              <Check className="inline text-success" />
+              The quiz has been submitted, we will contact you soon.
             </h1>
           )}
           {!quizCompleted && (
