@@ -361,7 +361,7 @@ export default function Quiz() {
           </header>
           <progress
             className="progress progress-primary w-full mb-6"
-            value={((currentQuestion + 1) * 100) / totalQuestions}
+            value={((currentQuestion) * 100) / totalQuestions}
             max="100"
           ></progress>
           {!quizCompleted ? (
