@@ -233,7 +233,7 @@ export default function Quiz() {
       setQuizCompleted(true);
 
       posthog.capture("emQUIZ", {
-        $set: { name: { selectedAnswers } },
+        $set: { emQUIZ: selectedAnswers },
       });
 
       determineOutcome();
