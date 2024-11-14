@@ -182,9 +182,10 @@ export default function Quiz() {
       options: [
         { text: "Technical architecture docs", id: "" },
         { text: "API documentation", id: "" },
-        { text: "PRD and specifications", id: "" },
+        { text: "PRD and specifications", id: "highPerforming" },
         { text: "Onboarding documentation", id: "" },
         { text: "Process documentation", id: "" },
+        { text: "No documentation mostly", id: "needsSignificantHelp" },
       ],
       type: "multiple",
     },
@@ -198,16 +199,16 @@ export default function Quiz() {
       ],
       type: "single",
     },
-    {
-      question: "How do you handle technical debt?",
-      options: [
-        { text: "Regular dedicated time for refinement", id: "highPerforming" },
-        { text: "Address it when it becomes problematic", id: "goodWithGaps" },
-        { text: "Only fix when it causes issues", id: "needsAttention" },
-        { text: "No systematic approach", id: "needsSignificantHelp" },
-      ],
-      type: "single",
-    },
+    // {
+    //   question: "How do you handle technical debt?",
+    //   options: [
+    //     { text: "Regular dedicated time for refinement", id: "highPerforming" },
+    //     { text: "Address it when it becomes problematic", id: "goodWithGaps" },
+    //     { text: "Only fix when it causes issues", id: "needsAttention" },
+    //     { text: "No systematic approach", id: "needsSignificantHelp" },
+    //   ],
+    //   type: "single",
+    // },
   ];
 
   const totalQuestions = questions.length;
