@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { Check, ChevronLeft, ChevronRight, Mail, XCircle } from "lucide-react";
 import Logo from "./logo";
+import posthog from "posthog-js";
 
 export default function Quiz() {
   const [currentQuestion, setCurrentQuestion] = useState(0);
@@ -230,6 +231,11 @@ export default function Quiz() {
       setCurrentQuestion(currentQuestion + 1);
     } else {
       setQuizCompleted(true);
+
+      posthog.capture("emQUIZ", {
+        $set: { name: { selectedAnswers } },
+      });
+
       determineOutcome();
     }
   };
@@ -352,7 +358,7 @@ export default function Quiz() {
           <header className="flex items-center justify-between mb-6">
             <div className="avatar">
               <div className="w-16 rounded-full ring ring-primary ring-offset-2">
-                <Logo size="60" className="m-auto"/>
+                <Logo size="60" className="m-auto" />
               </div>
             </div>
             <h1 className="card-title text-3xl font-bold text-center flex-grow pl-5">
@@ -361,7 +367,7 @@ export default function Quiz() {
           </header>
           <progress
             className="progress progress-primary w-full mb-6"
-            value={((currentQuestion) * 100) / totalQuestions}
+            value={(currentQuestion * 100) / totalQuestions}
             max="100"
           ></progress>
           {!quizCompleted ? (
