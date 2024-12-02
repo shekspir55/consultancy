@@ -18,6 +18,8 @@ export default function Home() {
     "https://www.youtube.com/embed/5tZUVczuvAY?si=VP8RFnq0bd5hY8II",
     "https://www.youtube.com/embed/iy-Eb3KO1kY?si=IskIHKcXCsRmUZtC",
     "https://www.youtube.com/embed/zMEOVp52Rww?si=bdVp086jqiRO_vRq",
+    "https://www.youtube.com/embed/uRTBJiGAw1A?si=SUBmHcrvQELOvEKd",
+    "https://www.youtube.com/embed/1yzGzf-aU2Y?si=2xGGzkoZ4Zpufjzn"
   ];
 
   const consultants = [
@@ -366,7 +368,10 @@ export default function Home() {
           </div>
         </div>
         <div className="divider"></div>
-        <div className="flex justify-center align-middle bg-primary min-h-screen" id="quiz">
+        <div
+          className="flex justify-center align-middle bg-primary min-h-screen"
+          id="quiz"
+        >
           <Quiz />
         </div>
         <div className="divider"></div>
