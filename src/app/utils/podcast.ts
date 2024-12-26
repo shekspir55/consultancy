@@ -7,6 +7,7 @@ export default async function generatePodcastRssFeed() {
   const podcastsDirectory = "./public/podcast/podcasts";
   const logoPath = "logo.png";
 
+  const email = "hello@powered-by.love";
   const companyName = "Powered by Love LLC";
   const websiteUrl = "https://powered-by.love";
   const urlPathToPodcasts = "/podcast/podcasts";
@@ -16,6 +17,7 @@ export default async function generatePodcastRssFeed() {
 Յուրաքանչյուր դրվագում ոլորտի առաջատար մասնագետները կիսվում են իրենց փորձով, խոսում մարտահրավերների և հնարավորությունների մասին։ Քննարկում ենք տեխնոլոգիական զարգացումները, կրթությունը, ձեռնարկատիրությունը և ոլորտի ապագան։
 Փոդքասթը նախատեսված է տեխնոլոգիական ոլորտի մասնագետների, ձեռներեցների և բոլոր նրանց համար, ովքեր հետաքրքրված են Հայաստանի տեխնոլոգիական էկոհամակարգի զարգացմամբ:
 Հեղինակ և վարող՝ Ռուբեն Խաչատրյան`;
+
   const pubDate = new Date().toUTCString();
 
   const feed = new Podcast({
@@ -37,6 +39,8 @@ export default async function generatePodcastRssFeed() {
         text: "Technology"
       },
     ],
+    itunesOwner: { name: author, email },
+    itunesSummary: description,
   });
 
   const podcastFiles = fs.readdirSync(podcastsDirectory);
