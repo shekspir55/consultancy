@@ -23,7 +23,7 @@ export default async function generatePodcastRssFeed() {
   const feed = new Podcast({
     title: "Powered.Podcast",
     description,
-    feedUrl: `${websiteUrl}${urlPathToPodcasts}/rss.xml`,
+    feedUrl: `${websiteUrl}/podcast/rss.xml`,
     siteUrl: websiteUrl,
     imageUrl: `${websiteUrl}/podcast/${logoPath}`,
     // docs: 'http://example.com/rss/docs.html',
@@ -38,12 +38,7 @@ export default async function generatePodcastRssFeed() {
 
     itunesCategory: [
       {
-        text: "Entertainment",
-        subcats: [
-          {
-            text: "Television",
-          },
-        ],
+        text: "Technology"
       },
     ],
   });
