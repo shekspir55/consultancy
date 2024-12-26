@@ -25,7 +25,7 @@ export default async function generatePodcastRssFeed() {
         description,
         feedUrl: `${websiteUrl}${urlPathToPodcasts}/rss.xml`,
         siteUrl: websiteUrl,
-        imageUrl: `${websiteUrl}${urlPathToPodcasts}/${logoPath}`,
+        imageUrl: `${websiteUrl}/podcast/${logoPath}`,
         // docs: 'http://example.com/rss/docs.html',
         author,
         managingEditor: authorName,
@@ -51,10 +51,15 @@ export default async function generatePodcastRssFeed() {
             description: '',
             url: `${websiteUrl}${urlPathToPodcasts}/${fileName}`,
             date: fs.statSync(`${podcastsDirectory}/${fileName}`).birthtime.toUTCString(),
+            // itunes
+            enclosure: { url: `${websiteUrl}${urlPathToPodcasts}/${fileName}`, file: `${podcastsDirectory}/${fileName}` },
+            itunesAuthor: author,
+            itunesExplicit: false,
+            itunesNewFeedUrl: `${websiteUrl}${urlPathToPodcasts}/rss.xml`,
         });
     });
 
-    /* loop over data and add to feed */
+    // /* loop over data and add to feed */
     // feed.addItem({
     //     title: 'item title',
     //     description: 'use this for the content. It can include html.',
