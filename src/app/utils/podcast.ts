@@ -18,24 +18,20 @@ export default async function generatePodcastRssFeed() {
 Հեղինակ և վարող՝ Ռուբեն Խաչատրյան`;
   const pubDate = new Date().toUTCString();
 
-  // if the file exists, return
-  /* lets create an rss feed */
   const feed = new Podcast({
     title: "Powered.Podcast",
     description,
     feedUrl: `${websiteUrl}/podcast/rss.xml`,
     siteUrl: websiteUrl,
     imageUrl: `${websiteUrl}/podcast/${logoPath}`,
-    // docs: 'http://example.com/rss/docs.html',
     author,
     managingEditor: authorName,
     webMaster: authorName,
     copyright: `${new Date().getFullYear()} ${companyName}`,
     language: "hy",
     categories: ["Armenia", "IT", "Software Development", "HR", "Engineering"],
-    // pubDate: 'May 20, 2012 04:00:00 GMT',
     ttl: 60 * 3,
-
+    // itunes
     itunesCategory: [
       {
         text: "Technology"
@@ -44,7 +40,6 @@ export default async function generatePodcastRssFeed() {
   });
 
   const podcastFiles = fs.readdirSync(podcastsDirectory);
-  //log the podcast files with caption
 
   console.log(`Podcast files: ${podcastFiles.join(", ")}`);
 
@@ -69,7 +64,7 @@ export default async function generatePodcastRssFeed() {
       itunesNewFeedUrl: `${websiteUrl}${urlPathToPodcasts}/rss.xml`,
     });
   });
-  
+
   const xml = feed.buildXml();
 
   fs.writeFileSync(pathToFile, xml);
