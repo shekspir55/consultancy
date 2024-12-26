@@ -1,11 +1,14 @@
 import WhatWeDo from "./common/what-we-do";
 import Image from "next/image";
+
 import LoveGuaranteed from "./love-guaranteed";
 import Logo from "./logo";
 import Quiz from "./quiz";
 import StructuredData from "./components/StructuredData";
+import generatePodcastRssFeed from "./utils/podcast";
 
 // website url is https://powered-by.love/
+generatePodcastRssFeed();
 
 export default function Home() {
   const podcastURLs = [
@@ -19,7 +22,9 @@ export default function Home() {
     "https://www.youtube.com/embed/iy-Eb3KO1kY?si=IskIHKcXCsRmUZtC",
     "https://www.youtube.com/embed/zMEOVp52Rww?si=bdVp086jqiRO_vRq",
     "https://www.youtube.com/embed/uRTBJiGAw1A?si=SUBmHcrvQELOvEKd",
-    "https://www.youtube.com/embed/1yzGzf-aU2Y?si=2xGGzkoZ4Zpufjzn"
+    "https://www.youtube.com/embed/1yzGzf-aU2Y?si=2xGGzkoZ4Zpufjzn",
+    "https://www.youtube.com/embed/_JmrLnbUZoU?si=t7G-nqENBDJvLRxh",
+    "https://www.youtube.com/embed/VvkGY74nX5I?si=61C4uPSu3XFkKaQZ",
   ];
 
   const consultants = [
