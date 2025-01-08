@@ -84,6 +84,37 @@ export default function Home() {
     // },
   ];
 
+  const cases = [
+    {
+      name: "Solicy",
+      logo: "/logos/solicy.png",
+      url: "https://solicy.net/?utm_source=partnerwebsite&utm_medium=PBLConsultancy",
+      width: 200,
+      height: 70,
+    },
+    {
+      name: "reArmenia",
+      logo: "/logos/rearmenia.png",
+      url: "https://rearmenia.am",
+      width: 200,
+      height: 70,
+    },
+    {
+      name: "3n",
+      logo: "/logos/3nstartups.png",
+      url: "https://3nstartups.com/",
+      width: 200,
+      height: 70,
+    },
+    {
+      name: "Avromic",
+      logo: "/logos/avromic.png",
+      url: "https://www.avromic.com/",
+      width: 200,
+      height: 70,
+    },
+  ];
+
   const link = "https://cal.com/ruben-pbl/";
 
   return (
@@ -197,22 +228,28 @@ export default function Home() {
           <div>
             <div className="flex justify-center text-center">
               <div className="container">
-                <div className=" flex  flex-col items-center">
-                  <h2 className="text-4xl lg:text-6xl font-bold m-5 text-primary ">
+                <div className="flex flex-col items-center">
+                  <h2 className="text-4xl lg:text-6xl font-bold m-5 text-primary">
                     Cases
                   </h2>
-                  <a
-                    href="https://solicy.net/?utm_source=partnerwebsite&utm_medium=PBLConsultancy"
-                    target="_blank"
-                    className="m-10"
-                  >
-                    <Image
-                      src="/logos/solicy.png"
-                      width={200}
-                      height={300}
-                      alt="Solicy logo"
-                    />
-                  </a>
+                  <div className="flex flex-wrap justify-center">
+                    {cases.map((case_) => (
+                      <a
+                        href={case_.url}
+                        target="_blank"
+                        className="m-10"
+                        key={case_.name}
+                      >
+                        <Image
+                        className="w-auto h-[70px]"
+                          src={case_.logo}
+                          width={case_.width}
+                          height={case_.height}
+                          alt={`${case_.name} logo`}
+                        />
+                      </a>
+                    ))}
+                  </div>
                 </div>
                 <div>
                   <h2 className="text-4xl lg:text-6xl font-bold m-5 text-primary ">
@@ -230,7 +267,7 @@ export default function Home() {
           </div>
         </div>
         <div className="divider"></div>
-        <div className=" container m-auto flex flex-col justify-center">
+        <div className="container m-auto flex flex-col justify-center">
           <h2 className="text-5xl font-bold text-center m-5 text-primary ">
             Experienced Consultants
           </h2>
@@ -321,7 +358,6 @@ export default function Home() {
           <div className="flex flex-col">
             <h2 className="text-4xl font-bold block text-center text-primary ">
               Podcasts
-              
             </h2>
             <div className="flex justify-center m-5">
               <a
@@ -362,7 +398,7 @@ export default function Home() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerPolicy="strict-origin-when-cross-origin"
                     allowFullScreen
-                    className="m-2"
+                    className="m-2 shadow-xl"
                   ></iframe>
                 </div>
               ))}
@@ -411,10 +447,18 @@ export default function Home() {
           <p>LovePowered llc {new Date().getFullYear()}</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <a href="https://www.youtube.com/@Powered.Podcast" target="_blank" className="link">
+          <a
+            href="https://www.youtube.com/@Powered.Podcast"
+            target="_blank"
+            className="link"
+          >
             <Youtube className="w-8 h-8" />
           </a>
-          <a href="https://t.me/poweredCommunity" target="_blank" className="link">
+          <a
+            href="https://t.me/poweredCommunity"
+            target="_blank"
+            className="link"
+          >
             <Send className="w-8 h-8" />
           </a>
         </nav>
