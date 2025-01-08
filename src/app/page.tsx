@@ -117,6 +117,8 @@ export default function Home() {
 
   const link = "https://cal.com/ruben-pbl/";
 
+  const spotifyLink = "https://open.spotify.com/show/1bG94ePrMOekUkWVd75x12";
+
   return (
     <main>
       <div className="">
@@ -241,7 +243,7 @@ export default function Home() {
                         key={case_.name}
                       >
                         <Image
-                        className="w-auto h-[70px]"
+                          className="w-auto h-[70px]"
                           src={case_.logo}
                           width={case_.width}
                           height={case_.height}
@@ -361,7 +363,7 @@ export default function Home() {
             </h2>
             <div className="flex justify-center m-5">
               <a
-                className="btn btn-primary"
+                className="btn btn-secondary"
                 href="https://t.me/poweredCommunity"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -374,6 +376,11 @@ export default function Home() {
                 />
                 Join Our Telegram Community
               </a>
+            </div>
+            <h1 className="text-2xl font-bold text-center text-primary ">
+              Feeds
+            </h1>
+            <div className="flex justify-center m-5">
               <a
                 href="/podcast/rss.xml"
                 target="_blank"
@@ -382,6 +389,18 @@ export default function Home() {
               >
                 <Rss size={24} className="mr-2" />
                 Podcast RSS Feed
+              </a>
+              <a
+                href={spotifyLink}
+                target="_blank"
+                className="btn btn-primary ml-2"
+                title="Spotify"
+              >
+                <img
+                  width={100}
+                  src="https://storage.googleapis.com/pr-newsroom-wp/1/2023/05/Spotify_Full_Logo_RGB_Black-300x82.png"
+                  alt=""
+                />
               </a>
             </div>
             <div className="flex flex-wrap justify-center container">
