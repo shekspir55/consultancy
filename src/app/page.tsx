@@ -118,6 +118,9 @@ export default function Home() {
   const link = "https://cal.com/ruben-pbl/";
 
   const spotifyLink = "https://open.spotify.com/show/1bG94ePrMOekUkWVd75x12";
+  const applePodcastLink =
+    "https://podcasts.apple.com/us/podcast/powered-podcast/id1789508673";
+  const youtubeLink = "https://www.youtube.com/@Powered.Podcast";
 
   return (
     <main>
@@ -277,7 +280,10 @@ export default function Home() {
             {consultants
               .filter(({ years }) => years)
               .map((consultant) => (
-                <div className="card bg-slate-50 w-60 shadow-xl mt-5 m-1">
+                <div
+                  className="card bg-slate-50 w-60 shadow-xl mt-5 m-1"
+                  key={consultant.name}
+                >
                   <figure>
                     <Image
                       src={consultant.image}
@@ -290,10 +296,10 @@ export default function Home() {
                   <div className="card-body p-5">
                     <h2 className="card-title uppercase">
                       {consultant.name.split(" ").map((n) => (
-                        <>
+                        <div key={n}>
                           {n}
                           <br />
-                        </>
+                        </div>
                       ))}
                     </h2>
                     <b>{consultant.years} Years of Experience</b>
@@ -356,7 +362,7 @@ export default function Home() {
           </div>
         </div>
         <div className="divider"></div>
-        <div className="flex justify-center">
+        <div className="flex justify-center" id="podcast">
           <div className="flex flex-col">
             <h2 className="text-4xl font-bold block text-center text-primary ">
               Podcasts
@@ -384,16 +390,16 @@ export default function Home() {
               <a
                 href="/podcast/rss.xml"
                 target="_blank"
-                className="btn btn-primary ml-2"
+                className="btn ml-2"
                 title="RSS Feed"
               >
-                <Rss size={24} className="mr-2" />
+                <Rss size={24} className="mr-2 text-orange-500" />
                 Podcast RSS Feed
               </a>
               <a
                 href={spotifyLink}
                 target="_blank"
-                className="btn btn-primary ml-2"
+                className="btn ml-2"
                 title="Spotify"
               >
                 <img
@@ -402,10 +408,32 @@ export default function Home() {
                   alt=""
                 />
               </a>
+              <a
+                href={applePodcastLink}
+                target="_blank"
+                className="btn ml-2"
+                title="Apple Podcasts"
+              >
+                <img
+                  className="h-[40px]"
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Podcasts_%28iOS%29.svg/240px-Podcasts_%28iOS%29.svg.png"
+                  alt="Apple Podcasts logo"
+                />
+                Apple Podcasts
+              </a>
+              <a
+                href={youtubeLink}
+                target="_blank"
+                className="btn ml-2"
+                title="YouTube"
+              >
+                <Youtube size={24} className="mr-2 text-red-500" />
+                YouTube
+              </a>
             </div>
             <div className="flex flex-wrap justify-center container">
               {podcastURLs.map((podcastURL, index) => (
-                <div>
+                <div key={index}>
                   <h4 className="text-2xl">Podcast {index}</h4>
                   <iframe
                     key={podcastURL}
@@ -462,15 +490,10 @@ export default function Home() {
       </div>
       <footer className="footer bg-primary text-neutral-content items-center p-4">
         <aside className="grid-flow-col items-center">
-          <Heart className="w-9 h-9" />
           <p>LovePowered llc {new Date().getFullYear()}</p>
         </aside>
         <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
-          <a
-            href="https://www.youtube.com/@Powered.Podcast"
-            target="_blank"
-            className="link"
-          >
+          <a href={youtubeLink} target="_blank" className="link">
             <Youtube className="w-8 h-8" />
           </a>
           <a
