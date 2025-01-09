@@ -365,32 +365,13 @@ export default function Home() {
         <div className="flex justify-center" id="podcast">
           <div className="flex flex-col">
             <h2 className="text-4xl font-bold block text-center text-primary ">
-              Podcasts
+              Podcast Feeds
             </h2>
-            <div className="flex justify-center m-5">
-              <a
-                className="btn btn-secondary"
-                href="https://t.me/poweredCommunity"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="rounded-full"
-                  src="https://cdn4.cdn-telegram.org/file/hrZo7e1juop7H8EdqftbpSWTOc8i89_Tx6shDnLbuRI-YOdYBR0Cb6p1CuMChQPHI74FDQZSbuq7poUcmK87q3s0CpjL62AcNUuXtBisi3bnB4t0pNXAg4UbvSR0pWQFslFsKvL0c1ltIfRmAfaUnCeCEzzSrY2qorGz4_yp5rmaQ2fy05dVQMWndR3e9sXD9Ypzw4HgXUD2CO1b9n_9SayE3VsjOIjN70WcLyqnLG-ItUhoyoLLDpmwEr7MsKq7NHRIacSx_xK4dU6UUbxtNb-aBy8dvcnreedH2yderapXfBwXyLCJ1UdJdvFGFbN0ZfniUM-eLZ1C48wkxsIOLw.jpg"
-                  width={30}
-                  alt=""
-                />
-                Join Our Telegram Community
-              </a>
-            </div>
-            <h1 className="text-2xl font-bold text-center text-primary ">
-              Feeds
-            </h1>
-            <div className="flex justify-center m-5">
+            <div className="flex justify-center m-5 gap-5 w-full flex-wrap">
               <a
                 href="/podcast/rss.xml"
                 target="_blank"
-                className="btn ml-2"
+                className="btn"
                 title="RSS Feed"
               >
                 <Rss size={24} className="mr-2 text-orange-500" />
@@ -399,7 +380,7 @@ export default function Home() {
               <a
                 href={spotifyLink}
                 target="_blank"
-                className="btn ml-2"
+                className="btn"
                 title="Spotify"
               >
                 <img
@@ -411,11 +392,11 @@ export default function Home() {
               <a
                 href={applePodcastLink}
                 target="_blank"
-                className="btn ml-2"
+                className="btn"
                 title="Apple Podcasts"
               >
                 <img
-                  className="h-[40px]"
+                  className="h-[30px]"
                   src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Podcasts_%28iOS%29.svg/240px-Podcasts_%28iOS%29.svg.png"
                   alt="Apple Podcasts logo"
                 />
@@ -424,11 +405,28 @@ export default function Home() {
               <a
                 href={youtubeLink}
                 target="_blank"
-                className="btn ml-2"
+                className="btn"
                 title="YouTube"
               >
                 <Youtube size={24} className="mr-2 text-red-500" />
                 YouTube
+              </a>
+            </div>
+            <div className="flex justify-center m-5">
+              <a
+                className="btn btn-secondary"
+                href="https://t.me/poweredCommunity"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  className="rounded-full"
+                  src="/logos/powered-community.jpg"
+                  width={30}
+                  height={30}
+                  alt="Powered Community Telegram logo"
+                />
+                Join Our Telegram Community
               </a>
             </div>
             <div className="flex flex-wrap justify-center container">
