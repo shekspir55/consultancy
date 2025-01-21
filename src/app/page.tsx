@@ -26,6 +26,7 @@ export default function Home() {
     "https://www.youtube.com/embed/1yzGzf-aU2Y?si=2xGGzkoZ4Zpufjzn",
     "https://www.youtube.com/embed/_JmrLnbUZoU?si=t7G-nqENBDJvLRxh",
     "https://www.youtube.com/embed/VvkGY74nX5I?si=61C4uPSu3XFkKaQZ",
+    "https://www.youtube.com/embed/UCuyQ1_NgWE?si=vNCHvcCOd3ks35ko"
   ];
 
   const consultants = [
@@ -272,7 +273,7 @@ export default function Home() {
           </div>
         </div>
         <div className="divider"></div>
-        <div className="container m-auto flex flex-col justify-center">
+        <div className="container m-auto flex flex-col justify-center" id="consultants">
           <h2 className="text-5xl font-bold text-center m-5 text-primary ">
             Experienced Consultants
           </h2>
