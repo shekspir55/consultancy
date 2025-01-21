@@ -295,12 +295,7 @@ export default function Home() {
                   </figure>
                   <div className="card-body p-5">
                     <h2 className="card-title uppercase">
-                      {consultant.name.split(" ").map((n) => (
-                        <div key={n}>
-                          {n}
-                          <br />
-                        </div>
-                      ))}
+                      {consultant.name}
                     </h2>
                     <b>{consultant.years} Years of Experience</b>
                     <p className="capitalize">{consultant.title}</p>
