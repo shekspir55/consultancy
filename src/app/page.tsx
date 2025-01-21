@@ -35,7 +35,7 @@ export default function Home() {
       image: "/avatars/ruben.png",
       title:
         "Engineering Management, Soft Skills, Containerization, Documentation consultant",
-      years: 12,
+      years: 13,
     },
     {
       name: "Marta Martirosyan",
@@ -48,27 +48,27 @@ export default function Home() {
       image: "/avatars/andranik-k.png",
       title:
         "Engineering management, Software architecture, System performance, Backend consultant",
-      years: 12,
+      years: 13,
     },
     {
       name: "Andranik Muradyan",
       image: "/avatars/andranik.png",
       title:
         "Distributed systems, Complex system design, TDD, Functional programming consultant",
-      years: 18,
+      years: 19,
     },
     {
       name: "Norayr Chilingaryan",
       image: "/avatars/norayr.png",
       title:
         "Embedded systems, DevOPS, Linnux, Infarstructure, Open source consultant",
-      years: 28,
+      years: 29,
     },
     {
       name: "Karen Navasardyan",
       image: "/avatars/karen.png",
       title: "Android, IOS, Native mobile architecture consultant",
-      years: 10,
+      years: 11,
     },
     // {
     //   name: "Davit Mkrtychyan",
